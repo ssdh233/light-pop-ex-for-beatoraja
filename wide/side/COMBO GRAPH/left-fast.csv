@@ -1,0 +1,61 @@
+#ENDOFHEADER,
+
+//COMBO GRAPH LEFT FAST
+
+//左右端グラフ用画像　左側は40～44が使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\side\COMBO GRAPH\combograph.png,,, //40
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //41
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //42
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //43
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //44
+
+#IF,32,
+
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,1,1,80,480,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,0,0,80,480,0,0,255,255,255,1,0,0,0,500,0,0,0,0,
+#DST_IMAGE,0,500,0,0,80,480,0,255,255,255,255,1,0,0,0,,,,,,
+
+//グラフパーツFirstTry(“FIRST TRY”),,,//option100 NOT PLAYED,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,82,323,62,18,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,16,386,62,18,0,0,255,255,255,1,0,0,0,500,0,100,!290,0,
+#DST_IMAGE,0,500,16,386,62,18,0,255,255,255,255,1,0,0,0,,,,,,
+#DST_IMAGE,0,1500,16,386,62,18,0,0,255,255,255,1,0,0,0,,,,,,
+#DST_IMAGE,0,2500,16,386,62,18,0,255,255,255,255,1,0,0,0,,,,,,
+
+//グラフパーツ自己ベスト非表示,,,//option290 COURSE,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,82,342,62,41,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,16,363,62,41,0,0,255,255,255,1,0,0,0,500,0,290,0,0,
+#DST_IMAGE,0,500,16,363,62,41,0,255,255,255,255,1,0,0,0,,,,,,
+
+//now combo,//type25 1P MAXCOMBO/totalnotes,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,82,1,30,320,1,1,0,0,25,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,500,7,360,30,0,2,255,255,255,255,1,0,0,0,1000,0,0,0,0,
+#DST_BARGRAPH,0,1000,7,360,30,-320,2,255,255,255,255,1,0,0,0,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+//mybest bg,//45 HIGHSCORE MAXCOMBO/totalnotes,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,112,1,30,320,1,1,0,0,45,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,500,42,360,30,0,2,255,255,255,255,1,0,0,0,1000,0,!290,0,0,
+#DST_BARGRAPH,0,1000,42,360,30,-320,2,255,255,255,255,1,0,0,0,,,,,,
+
+//”MYBEST”,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,82,409,47,12,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,1000,2,347,47,12,0,255,255,255,255,1,0,0,0,1000,0,!100,!290,0,
+//数値,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,,
+#SRC_NUMBER,0,40,82,384,77,12,11,1,0,0,75,0,4,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,1000,51,347,7,12,0,255,255,255,255,1,0,0,0,1000,0,!100,!290,0,
+
+#ENDIF,

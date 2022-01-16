@@ -1,0 +1,23 @@
+#ENDOFHEADER,
+
+//キャラ用画像　左側は30～34が使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\chara\standard\COMBO GRAPH\combograph.png,,, //30
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //31
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //32
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //33
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //34
+
+//名前用の画像を定義した場合はop990をオンにすれば残り時間が消えます
+//#SETOPTION,990,1,
+
+//op936 LOAD START TIME NORMAL
+
+#IF,936,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\chara\standard\COMBO GRAPH\normal.csv,,,,,
+
+//op937 LOAD START TIME FAST
+
+#ELSE,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\chara\standard\COMBO GRAPH\fast.csv,,,,,
+
+#ENDIF,

@@ -1,0 +1,100 @@
+#ENDOFHEADER,
+
+//LN用レーザーカバー(GHOST TYPE-EX)
+
+
+//3
+//符号大
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,0,0,324,250,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,256,130,27,125,0,255,255,255,255,1,0,0,0,0,73,32,0,0
+
+//符号小
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,337,533,72,30,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,277,256,6,15,0,255,255,255,255,1,0,0,0,0,73,32,0,0
+
+//4
+//符号大
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,325,0,276,250,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,283,130,23,125,0,255,255,255,255,1,0,0,0,0,74,32,0,0
+
+//符号小
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,337,502,228,30,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,283,256,19,15,0,255,255,255,255,1,0,0,0,0,74,32,0,0
+
+//5
+//符号大
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,0,502,336,250,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,306,130,28,125,0,255,255,255,255,1,0,0,0,0,75,32,0,0
+
+//数値 符号
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,410,533,108,30,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,313,256,9,15,0,255,255,255,255,1,0,0,0,0,75,32,0,0,
+
+//数値 5桁目
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,602,0,320,360,1,24,0,0,108,0,5
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,2,256,320,15,0,255,255,255,255,1,0,0,0,0,75,32,0,0,
+
+//数値 4桁目
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,923,0,320,360,1,24,0,0,108,0,4
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,11,256,320,15,0,255,255,255,255,1,0,0,0,0,75,32,0,0,
+
+//6
+//符号大
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,325,251,276,250,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,334,130,23,125,0,255,255,255,255,1,0,0,0,0,76,32,0,0
+
+//数値 4桁目
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,1244,0,320,360,1,24,0,0,108,0,4
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,14,256,320,15,0,255,255,255,255,1,0,0,0,0,76,32,0,0,
+
+//数値 3桁目
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,602,0,320,360,1,24,0,0,108,0,3
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,20,256,320,15,0,255,255,255,255,1,0,0,0,0,76,32,0,0,
+
+//数値 2桁目
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,602,361,320,360,1,24,0,0,108,0,2
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,29,256,320,15,0,255,255,255,255,1,0,0,0,0,76,32,0,0,
+
+//7
+//符号大
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,0,251,324,250,12,2,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,357,130,27,125,0,255,255,255,255,1,0,0,0,0,77,32,0,0
+
+//数値 2桁目
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,923,361,320,360,1,24,0,0,108,0,2
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,37,256,320,15,0,255,255,255,255,1,0,0,0,0,77,32,0,0,
+
+//数値 1桁目
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta
+#SRC_NUMBER,0,13,602,0,320,360,1,24,0,0,108,0,1
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,38,256,320,15,0,255,255,255,255,1,0,0,0,0,77,32,0,0,
+

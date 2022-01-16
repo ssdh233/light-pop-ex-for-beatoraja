@@ -1,0 +1,18 @@
+#ENDOFHEADER,
+
+//FC Effect Standard 従来形式共通CSV
+
+//フルコンエフェクト他,,,,,,,,,,,,,,,,,,,,
+//全ノートの処理の終了時に、タイマーが発動します,,,,,,,,,,,,,,,,,,,,
+
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,6,0,0,3388,318,11,1,250,48,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,166,40,308,318,0,255,255,255,255,1,1,0,0,-1,48,0,0,0
+#DST_IMAGE,0,250,166,40,308,318,0,255,255,255,255,1,1,0,0,,,,,
+
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,6,3080,0,308,318,1,1,0,48,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,250,166,40,308,318,0,255,255,255,255,1,1,0,1750,-1,48,0,0,0
+#DST_IMAGE,0,1750,166,40,308,318,0,0,255,255,255,1,1,0,0,,,,,

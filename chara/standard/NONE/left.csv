@@ -1,0 +1,8 @@
+#ENDOFHEADER,
+
+//キャラ用画像　左側は30～34が使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //30
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //31
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //32
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //33
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //34

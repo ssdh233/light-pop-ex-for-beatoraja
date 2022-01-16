@@ -1,0 +1,35 @@
+#ENDOFHEADER,
+
+//キャラ用画像　右側は35～39が使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\chara\standard/*\mascot.png,,, //35
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //36
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //37
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //38
+
+//名前用の画像を定義する場合はgr39に指定 サイズは128x45にすること
+#IMAGE,.\LR2files\Theme\OA_LP_EX\chara\standard/*\name.png,,, //39
+
+//名前用の画像を定義した場合はop991をオンにすればDJLEVELが消えます
+#SETOPTION,991,1,
+
+//名前用画像はフレーム側で配置　ここでは定義しません
+
+//op936 LOAD START TIME NORMAL
+
+#IF,936,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,35,0,0,128,256,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,2000,496,106,128,256,0,0,255,255,255,1,0,0,0,3000,0,0,0,0,
+#DST_IMAGE,0,3000,496,106,128,256,0,255,255,255,255,1,0,0,0,,,,,,
+
+//op937 LOAD START TIME FAST
+
+#ELSE,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,35,0,0,128,256,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,0,0,0,500,0,0,0,0,
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,0,0,0,,,,,,
+
+#ENDIF,

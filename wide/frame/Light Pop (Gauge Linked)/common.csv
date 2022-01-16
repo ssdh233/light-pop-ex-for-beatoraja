@@ -1,0 +1,22 @@
+#ENDOFHEADER,
+
+//FRAME COMMON
+
+//追加画像 gr27-29まで使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\frame\*\stage_parts.png,,, //27
+#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\frame\*\gauge_bg.png,,, //28
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //29
+
+//[フォント定義],,,,
+//,size,thick,type,name
+#FONT,60,5,2,ＤＦＰPOPミックスW3
+#FONT,15,5,2,ヒラギノ角ゴ7
+#FONT,12,5,2,ヒラギノ角ゴ7
+
+#LR2FONT,.\LR2files\Theme\LR2\Select\barfnt\font.lr2font,,,,
+#LR2FONT,.\LR2files\Theme\LR2\Select\titlefont\font.lr2font,,,,
+#LR2FONT,.\LR2files\Theme\OA_LP_EX\font\graph\00\font.lr2font,,,,,,,,,,,,,,,,,,,,
+
+//壁紙システムを無効にする場合はop993をオンにすると壁紙が表示されなくなりLOAD START TIME FAST、BGA TYPE-1に固定されます。
+//この場合、main_normal.csv、parts_normal.csvは不要になります。
+//#SETOPTION,993,1,

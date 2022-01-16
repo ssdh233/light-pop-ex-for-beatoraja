@@ -1,0 +1,8 @@
+#ENDOFHEADER,
+
+//左右端グラフ用画像　左側は40～44が使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //40
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //41
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //42
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //43
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //44

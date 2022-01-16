@@ -1,0 +1,326 @@
+//,type,title,maker,thumbnail
+#INFORMATION,4,Light Pop EX -Standard- v1.16.1224.2,misty.ls04,LR2files\Theme\OA_LP_EX\.png
+//typeは,,,,
+//0 7KEYS,,,,
+//1 5KEYS,,,,
+//2 14KEYS,,,,
+//3 10KEYS,,,,
+//4 9KEYS,,,,
+//5 MUSICSELECT,,,,
+//6 DECIDE,,,,
+//7 RESULT,,,,
+//8 KEYCONFIG,,,,
+//9 SKINSELECT,,,,
+//10 SOUNDSET,,,,
+//11 THEME,,,,
+
+
+//カスタマイズ情報,,,,,,,,
+//op909はPM/BMオブジェの判別に使用
+//op956はOADX+Linkのために使用
+//op974-976はLOSTフラグのために使用
+//op982は3LINE JUDGEに使用
+//op983は判定連動レーザーに使用
+//op984はOADX+Linkバージョン切り替えに使用
+//op985-986はPMコースリザルトスキンリンクに使用
+//  op985 ロード正常終了フラグ
+//  op986 決定スキンからの呼び出しフラグ
+//op988-989はPMリザルトスキンリンクに使用
+//  op988 ロード正常終了フラグ
+//  op989 プレイスキンからの呼び出しフラグ
+//op990,991はキャラの名前画像定義済みフラグに使用
+//op993は壁紙システム無効スイッチに使用
+
+#CUSTOMOPTION,LOAD START TIME,936,NORMAL,FAST,
+
+#CUSTOMOPTION,GAUGE TYPE INFO,930,ON,OFF,
+#CUSTOMOPTION,GAUGE WARNING,920,ON,OFF,
+
+#CUSTOMOPTION,BOMB ANIMATION,950,NORMAL,FAST,
+#CUSTOMOPTION,BOMB POSITION FIX,958,OFF,ON,
+
+#CUSTOMOPTION,LASER ANIMATION,940,NORMAL,FAST,VERY FAST,INSTANT,
+#CUSTOMOPTION,LASER LENGTH,945,FULL,HALF,QUARTER,
+#CUSTOMOPTION,LASER WIDTH,914,NORMAL,SIDE CUT,
+#CUSTOMOPTION,HIDE LN-LASER,916,ON,OFF,
+
+#CUSTOMOPTION,GHOST TYPE-EX,912,OFF,ON,
+
+#CUSTOMOPTION,INFORMATION,938,ALWAYS DISPLAY,ONLY COURSE,
+
+#CUSTOMOPTION,BGA TYPE,905,TYPE-1,TYPE-2,
+
+#CUSTOMOPTION,USE BACKBMP,932,ON,OFF,,,,
+#CUSTOMOPTION,USE STAGEFILE,934,ON,OFF,,,,
+
+#CUSTOMOPTION,STAGEFILE(CHARA),922,OFF,TYPE-1,TYPE-2,TYPE-3,,
+
+#CUSTOMOPTION,HEARTBEAT,968,ON,OFF,
+#CUSTOMOPTION,LOST,970,OFF,LEVEL 1,LEVEL 2,LEVEL 3,,
+
+#CUSTOMOPTION,OADX+ LINK,978,OFF,ON,
+
+
+#CUSTOMFILE,FRAME,.\LR2files\Theme\OA_LP_EX\standard\frame\*,LPEX Standard,
+
+#CUSTOMFILE,SEQUENCE,.\LR2files\Theme\OA_LP_EX\standard\obj\*,PM,
+
+#CUSTOMFILE,LANE,.\LR2files\Theme\OA_LP_EX\standard\lane\*.png,LPEX Default,
+
+#CUSTOMFILE,BOMB,.\LR2files\Theme\OA_LP_EX\common_parts\bomb\*.png,Light Pop,
+#CUSTOMFILE,LASER,.\LR2files\Theme\OA_LP_EX\standard\laser\*.png,LPEX Default,
+#CUSTOMFILE,LANE COVER,.\LR2files\Theme\OA_LP_EX\standard\lanecover\*.png,LPEX Default,
+
+#CUSTOMFILE,JUDGE,.\LR2files\Theme\OA_LP_EX\standard\judge\*,LPEX Default,
+
+#CUSTOMFILE,SCOREGRAPH TYPE,.\LR2files\Theme\OA_LP_EX\standard\graph\*,Default,
+
+#CUSTOMFILE,LEFT CHARA,.\LR2files\Theme\OA_LP_EX\chara\standard\*,NONE,
+#CUSTOMFILE,RIGHT CHARA,.\LR2files\Theme\OA_LP_EX\chara\standard/*,NONE,
+#CUSTOMFILE,CHARA BACKGROUND,.\LR2files\Theme\OA_LP_EX\standard\chara_bg\*.png,NONE,
+
+#CUSTOMFILE,BACK GROUND,.\LR2files\Theme\OA_LP_EX\background\*.png,Light Pop,
+
+#CUSTOMFILE,BOTTOM INFO,.\LR2files\Theme\OA_LP_EX\standard\bottom_info\*,NONE,
+
+#CUSTOMFILE,BARLINE,.\LR2files\Theme\OA_LP_EX\common_parts\barline\*.png,OFF,
+
+#CUSTOMFILE,FULLCOMBO EFFECT,.\LR2files\Theme\OA_LP_EX\standard\fullcombo\*,LPEX Default,
+
+#CUSTOMFILE,FAILED SHUTTER,.\LR2files\Theme\OA_LP_EX\common_parts\close\*,Light Pop,
+
+//INFORMATIONとCUSTOMIZEの終了時に入れてください。,,,,,,,,
+//必須ではありませんが、起動が少しばかり高速になります。,,,,,,,,
+#ENDOFHEADER,,,,,,,,
+
+
+//#CUSTOMOPTIONで設定したoption値は、#includeで参照しているスキンにも有効です,,,
+
+//exsetting読み込み
+#INCLUDE,LR2files\Theme\OA_LP_EX\exsetting.csv,
+
+//共通項目
+
+#SCRATCHSIDE,0,0,
+#TRANSCOLOR,0,255,0
+
+//[フェードアウト時間],
+//フェードアウト時にこの時間が過ぎると次のシーンに移行します。,
+#FADEOUT,550
+
+//[閉店時間],
+//close.csv側で定義
+
+
+//[画像定義],,,,
+//画像定義,filename,,,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\parts.png,,, //0
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\main.png,,, //1
+#IMAGE,.\LR2files\Theme\OA_LP_EX\common_parts\close\*\close.png,,, //2
+#IMAGE,.\LR2files\Theme\OA_LP_EX\background\*.png,,, //3
+#IMAGE,.\LR2files\Theme\OA_LP_EX\common_parts\bomb\*.png,,, //4
+#IMAGE,.\LR2files\Theme\OA_LP_EX\common_parts\barline\*.png,,, //5
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\fullcombo\*\fc.png,,, //6
+
+#IF,913,32,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\ghost_type_ex.png,,, //7
+
+#ELSE,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //7
+
+#ENDIF,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\lanecover\*.png,,, //8
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\obj\*\obj.png,,, //9
+
+#IF,982,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\judge\Light Pop\judge.png,,, //10
+
+#ELSE,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\judge\*\judge.png,,, //10
+
+#ENDIF,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\lane\*.png,,, //11
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\laser\*.png,,, //12
+
+#IF,913,32,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\ghost_type_ex_2.png,,, //13
+
+#ELSE,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //13
+
+#ENDIF,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\graph\*\graph.png,,, //14
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\chara_bg\*.png,,, //15
+
+#IF,983,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\laser\LPEX Default.png,,, //16
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\laser\YELLOW.png,,, //17
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\laser\RED.png,,, //18
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\laser\BLUE.png,,, //19
+
+#ELSE,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //16
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //17
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //18
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //19
+
+#ENDIF,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\standard\bottom_info\*\bottom.png,,, //20
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //21
+
+//PMコースリザルト用スキンリンク
+#INCLUDE,.\LR2files\Theme\PM_COURSE\skinlink_course_setting.csv, //22
+
+#IF,985,
+//正常に読み込めた場合は何もしない
+
+//読み込みに失敗した場合はgr22にダミーを指定
+#ELSE,
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png, //22
+
+#ENDIF,
+
+//PMリザルトスキン用スキンリンク
+//op989 プレイスキンからの呼び出しフラグ
+#SETOPTION,989,1,
+#INCLUDE,.\LR2files\Theme\PM_RESULT\skinlink_setting.csv, //23
+
+//op988 スキンリンク有効(ロード正常終了)
+#IF,988,
+//正常に読み込めた場合は何もしない
+
+#ELSE,
+//読み込みに失敗した場合はgr23にダミーを指定
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //23
+
+#ENDIF,
+
+//op979 OADX+Link ON
+#IF,979,
+
+//OADX+Link対応のためのリザルトパーツ読み込み　以下OADX+からコピペ
+//OVER ACTiVE DX+ & RED BELT SKIN SERIES by .RED (http://www.geocities.jp/red_without_right_stick/)
+
+//RED BELT RESULT SKIN用クリアマーク画像分岐,
+
+//他のリザルトスキン向けに分離しました,
+//リザルトスキンと一緒に切り替えないと意味がないので切り替えオプションは今後も実装しません,
+//なので読み込み画像の変更はresult_parts.csvを直接上書きする方向でお願いします,
+//念のためデフォルトのresult_parts.csvのバックアップとセットで配布してください,
+
+//option956 PLAY SKIN ON
+//決定スキンとの判別用に使います。削除しないように。
+#SETOPTION,956,1
+
+#INCLUDE,LR2files\Theme\OA_DX+\setting\result_parts.csv
+
+//ここまで
+
+#ELSE,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//24
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ENDIF,
+
+
+//op984 OADX+Link v2.8x互換
+#IF,979,984,
+
+#ELSEIF,979,290,
+
+#ELSEIF,979,105,
+
+#ELSEIF,979,100,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ELSEIF,979,101,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ELSEIF,979,102,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ELSEIF,979,103,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ELSEIF,979,104,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ELSEIF,979,142,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ELSEIF,979,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//24
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+
+#ENDIF,
+
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //26
+
+//gr27-29はフレーム用追加画像で予約済み
+
+//gr30-34はキャラ左側で予約済み
+//gr35-39はキャラ右側で予約済み
+
+//[フォント定義],,,,
+//各フレームのcommon.csvで定義
+
+//フレームのcommon.csv読み込み
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\common.csv,,
+
+//壁紙システム無効化処理
+#IF,993,
+
+//LOAD START TIME FAST固定化
+#SETOPTION,937,1,
+#SETOPTION,936,0,
+
+//BGA TYPE-1固定化
+#SETOPTION,985,1,
+#SETOPTION,986,0,
+
+#ENDIF,
+
+//LOST処理
+//OFF 通常
+#IF,970,
+#SETOPTION,974,1,
+#SETOPTION,975,1,
+#SETOPTION,976,1,
+
+//LEVEL1 レーザー非表示
+#ELSEIF,971,
+#SETOPTION,975,1,
+#SETOPTION,976,1,
+
+//LEVEL2 レーザー、ボム非表示
+#ELSEIF,972,
+#SETOPTION,976,1,
+
+
+//LEVEL3 レーザー、ボム、GOOD以上の判定非表示
+
+#ENDIF,
+
+
+//分岐
+//LOAD START TIME FAST
+#IF,937,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\core_fast.csv,,
+
+//LOAD START TIME NORMAL
+#ELSE,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\core_normal.csv,,
+
+#ENDIF,

@@ -1,0 +1,19 @@
+#ENDOFHEADER,
+
+//ILLUMINATION LEFT NORMAL
+
+//左右端グラフ用画像　左側は40～44が使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\side\*\illumination_base.png,,, //40
+#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\side\*\illumination1.png,,, //41
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //42
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //43
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //44
+
+//ベース
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,1,1,80,480,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,2000,0,0,80,480,0,0,255,255,255,1,0,0,0,3000,0,0,0,0,
+#DST_IMAGE,0,3000,0,0,80,480,0,255,255,255,255,1,0,0,0,,,,,,
+
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\wide\side\*\common-left.csv,,,,,

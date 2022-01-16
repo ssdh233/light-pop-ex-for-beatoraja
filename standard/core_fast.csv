@@ -1,0 +1,461 @@
+#ENDOFHEADER,,,
+
+//[入力開始時間],,,
+//入力開始時間,ms,,
+#STARTINPUT,500,,
+
+
+//[演奏開始時間],,,
+//LOADSTART シーン開始から曲ロード開始までの時間,,,
+//LOADEND ロード開始からロード終了までの最低時間(ロード時間が長ければそれだけ遅れます,
+//PLAYSTART ロード終了から曲開始までの時間,
+
+#LOADSTART,500
+#LOADEND,2000
+#PLAYSTART,2000
+
+
+//[画像配置],,,,,,,,,,,,,,,,,,,,
+
+//コピペ用テンプレート,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+
+//壁紙
+//op993 壁紙システム無効
+#IF,993,
+
+#ELSEIF,191,934,
+//壁紙 op=191 stagefile有り grは100を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,0,255,255,255,1,0,0,0,500,0,191,0,0
+#DST_IMAGE,0,500,0,0,640,480,0,255,255,255,255,1,0,0,0,,,,,
+
+#ELSEIF,195,932,
+//壁紙 op=195 backbmp有り grは101を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,0,255,255,255,1,0,0,0,500,0,195,0,0
+#DST_IMAGE,0,500,0,0,640,480,0,255,255,255,255,1,0,0,0,,,,,
+
+#ELSE,
+
+//壁紙 op=194 backbmp無し,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,3,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,0,255,255,255,1,0,0,0,500,0,0,0,0
+#DST_IMAGE,0,500,0,0,640,480,0,255,255,255,255,1,0,0,0,,,,,
+
+#ENDIF,
+
+
+///////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//BGA,,,,,,,,,,,,,,,,,,,,
+//SRCはほとんど形式を共通にするためのダミーでしかありませんが、一応表示に関するオプションを設定できます。,,,,,,,,,,,,,,,,,,,,
+//nobase,nolayer,nopoor 1にするとその階層のBGAは表示されません。,,,,,,,,,,,,,,,,,,
+
+
+//BGA TYPE-2
+#IF,906,
+
+//SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
+#SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_BGA,0,0,0,0,640,480,0,255,255,255,255,0,1,0,0,0,0,0,0,0
+
+#ENDIF,
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//フレーム,,,,,,,,,,,,,,,,,,,,
+
+//op913 GHOST TYPE EX
+#IF,913,32,
+
+//レーン
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,11,0,0,308,1,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,166,40,308,327,0,0,255,255,255,1,0,0,0,500,0,0,0,0
+#DST_IMAGE,0,500,166,40,308,327,0,255,255,255,255,1,0,0,0,,,,,
+
+//符号大
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
+#SRC_NUMBER,0,7,0,0,2064,250,12,2,0,0,108,0,1,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,234,130,172,125,0,0,255,255,255,1,0,0,0,500,0,32,0,0,
+#DST_NUMBER,0,500,234,130,172,125,0,255,255,255,255,1,0,0,0,,,,,,
+
+//符号小
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
+#SRC_NUMBER,0,7,145,251,408,30,12,2,0,0,108,0,1,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,262,256,34,15,0,0,255,255,255,1,0,0,0,500,0,32,0,0,
+#DST_NUMBER,0,500,262,256,34,15,0,255,255,255,255,1,0,0,0,,,,,,
+
+//数値
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
+#SRC_NUMBER,0,7,0,251,144,30,12,2,0,0,108,0,5,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,310,256,12,15,0,0,255,255,255,1,0,0,0,500,0,32,0,0,
+#DST_NUMBER,0,500,310,256,12,15,0,255,255,255,255,1,0,0,0,,,,,,
+
+#ELSE,
+
+//レーン
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,11,0,0,308,327,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,166,40,308,327,0,0,255,255,255,1,0,0,0,500,0,0,0,0
+#DST_IMAGE,0,500,166,40,308,327,0,255,255,255,255,1,0,0,0,,,,,
+
+#ENDIF,
+
+//op982 3列判定表示
+#IF,982,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\3line_frame.csv,,
+#ENDIF,
+
+//本体
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\main_fast.csv,
+
+//////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//キャラ
+
+//壁紙
+//op923-925 キャラ背景にSTAGEFILE/BACKBMP使用
+
+//op923 TYPE-1
+#IF,191,923,
+//背景 左 STAGEFILE
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,0,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,16,106,128,256,0,0,255,255,255,1,1,0,0,500,0,191,0,0
+#DST_IMAGE,0,500,16,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+//背景 右 STAGEFILE
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,0,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,1,0,0,500,0,191,0,0
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+#ELSEIF,195,923,
+//背景 左 BACKBMP
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,0,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,16,106,128,256,0,0,255,255,255,1,1,0,0,500,0,195,0,0
+#DST_IMAGE,0,500,16,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+//背景 右 BACKBMP
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,0,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,1,0,0,500,0,195,0,0
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+
+//op924 TYPE-2
+#ELSEIF,191,924,
+//背景 左 STAGEFILE
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,200,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,16,106,128,256,0,0,255,255,255,1,1,0,0,500,0,191,0,0
+#DST_IMAGE,0,500,16,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+//背景 右 STAGEFILE
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,200,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,1,0,0,500,0,191,0,0
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+#ELSEIF,195,924,
+//背景 左 BACKBMP
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,200,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,16,106,128,256,0,0,255,255,255,1,1,0,0,500,0,195,0,0
+#DST_IMAGE,0,500,16,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+//背景 右 BACKBMP
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,200,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,1,0,0,500,0,195,0,0
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+
+//op925 TYPE-3
+#ELSEIF,191,925,
+//背景 左 STAGEFILE
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,400,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,16,106,128,256,0,0,255,255,255,1,1,0,0,500,0,191,0,0
+#DST_IMAGE,0,500,16,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+//背景 右 STAGEFILE
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,400,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,1,0,0,500,0,191,0,0
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+#ELSEIF,195,925,
+//背景 左 BACKBMP
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,400,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,16,106,128,256,0,0,255,255,255,1,1,0,0,500,0,195,0,0
+#DST_IMAGE,0,500,16,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+//背景 右 BACKBMP
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,400,0,240,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,1,0,0,500,0,195,0,0
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,1,0,0,,,,,
+
+
+#ELSE,
+
+//背景 左 CHARA BACKGROUND
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,15,0,0,128,256,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,16,106,128,256,0,0,255,255,255,1,0,0,0,500,0,0,0,0,
+#DST_IMAGE,0,500,16,106,128,256,0,255,255,255,255,1,0,0,0,,,,,,
+
+//背景 右 CHARA BACKGROUND
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,15,0,0,128,256,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,496,106,128,256,0,0,255,255,255,1,0,0,0,500,0,0,0,0,
+#DST_IMAGE,0,500,496,106,128,256,0,255,255,255,255,1,0,0,0,,,,,,
+
+#ENDIF,
+
+//BGA TYPE-1
+#IF,905,
+
+//通常,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
+#SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_BGA,0,0,16,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+
+#SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_BGA,0,0,16,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+
+#SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_BGA,0,0,496,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+
+#SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_BGA,0,0,496,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+
+//でかい,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
+#SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_BGA,0,0,16,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,0,0
+
+//SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
+#SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_BGA,0,0,496,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,0,0
+
+#ENDIF,
+
+
+//左側
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\chara\standard\*\left.csv,
+
+//右側
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\chara\standard/*\right.csv,
+
+//////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//スコアグラフ,,,,,,,,,,,,,,,,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\graph\*\fast.csv,
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//レーザー,,,,,,,,,,,,,,,,,,,,
+
+//op983 判定連動レーザー
+//940 アニメーションNORMAL
+#IF,974,983,940,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-judge-linked.csv,,,,,
+
+//941 アニメーションFAST
+#ELSEIF,974,983,941,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-judge-linked.csv,,,,,
+
+//942 アニメーションVERYFAST
+#ELSEIF,974,983,942,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-judge-linked.csv,,,,,
+
+//943 アニメーションINSTANT
+#ELSEIF,974,983,943,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-judge-linked.csv,,,,,
+
+//通常
+//940 アニメーションNORMAL、945 長さFULL
+#ELSEIF,974,940,945,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-full.csv,,,,,
+
+//940 アニメーションNORMAL、946 長さHALF
+#ELSEIF,974,940,946,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-half.csv,,,,,
+
+//940 アニメーションNORMAL、947 長さQUARTER
+#ELSEIF,974,940,947,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-quarter.csv,,,,,
+
+//941 アニメーションFAST、945 長さFULL
+#ELSEIF,974,941,945,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-full.csv,,,,,
+
+//941 アニメーションFAST、946 長さHALF
+#ELSEIF,974,941,946,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-half.csv,,,,,
+
+//941 アニメーションFAST、947 長さQUARTER
+#ELSEIF,974,941,947,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-quarter.csv,,,,,
+
+//942 アニメーションVERYFAST、945 長さFULL
+#ELSEIF,974,942,945,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-full.csv,,,,,
+
+//942 アニメーションVERYFAST、946 長さHALF
+#ELSEIF,974,942,946,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-half.csv,,,,,
+
+//942 アニメーションVERYFAST、947 長さQUARTER
+#ELSEIF,974,942,947,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-quarter.csv,,,,,
+
+//943 アニメーションINSTANT、945 長さFULL
+#ELSEIF,974,943,945,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-full.csv,,,,,
+
+//943 アニメーションINSTANT、946 長さHALF
+#ELSEIF,974,943,946,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-half.csv,,,,,
+
+//943 アニメーションINSTANT、947 長さQUARTER
+#ELSEIF,974,943,947,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-quarter.csv,,,,,
+
+#ENDIF,
+
+//LN用レーザーカバー
+#IF,916,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\ln_laser_hider_lane.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\ln_laser_hider_frame.csv,,,,,
+#ENDIF,
+//op913 GHOST TYPE EX
+#IF,916,913,32,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\ln_laser_hider_ghost_ex.csv,,,,,
+#ENDIF,
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//ノート関連定義,,,,,,,,,,,,,,,,,,,,
+
+//小節線0が1P側、1が2P側,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_LINE,0,5,0,0,1,1,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_LINE,0,0,166,362,308,1,0,96,255,255,255,1,0,0,0,0,0,0,0,0
+
+//[ノート関連定義],,,,,,,,,,,,,
+//別ファイルに分離
+
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\obj\*\obj.csv,,,,,
+
+
+//サドプラ,,,,,,,,,,,,,,,,,,,,
+//スライダーの一種として扱います,,,,,,,,,,,,,,,,,,,,
+//1P 4 2P 5,,,,,,,,,,,,,,,,,,,,
+
+//レーン
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,muki,range,type,disable,,,,,,
+#SRC_SLIDER,0,11,0,0,308,1,1,1,0,0,2,327,4,1,,,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_SLIDER,0,500,166,-613,308,327,0,255,255,255,255,1,0,0,0,1000,0,0,0,0
+#DST_SLIDER,0,1000,166,-287,308,327,0,255,255,255,255,1,0,0,0,,,,,
+
+//カバー
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,muki,range,type,disable,,,,,,
+#SRC_SLIDER,0,8,0,0,310,327,1,1,0,0,2,327,4,1,,,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_SLIDER,0,500,165,-613,310,327,0,255,255,255,255,1,0,0,0,1000,0,0,0,0
+#DST_SLIDER,0,1000,165,-287,310,327,0,255,255,255,255,1,0,0,0,,,,,
+
+
+//950 ボム表示時間 NORMAL,958 ボム位置修正 OFF,
+#IF,975,950,958,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\normal-nofix.csv,,,,,
+
+//950 ボム表示時間 NORMAL,959 ボム位置修正 ON,
+#ELSEIF,975,950,959,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\normal-fix.csv,,,,,
+
+//951 ボム表示時間 FAST,958 ボム位置修正 OFF,
+#ELSEIF,975,951,958,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\fast-nofix.csv,,,,,
+
+//951 ボム表示時間 FAST,959 ボム位置修正 ON,
+#ELSEIF,975,951,959,
+#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\fast-fix.csv,,,,,
+
+#ENDIF,
+
+/////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//フレームパーツ
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\parts_fast.csv,,,,,
+
+//BOTTOM INFO
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\bottom_info\*\left.csv,,,,,
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//フルコンエフェクト他,,,,,,,,,,,,,,,,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\fullcombo\*\fc.csv,,,,,
+
+/////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+
+//ゴースト、ジャッジ、コンボカウントは別ファイルに分離
+
+//op982 3列判定表示
+#IF,982,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\3line_judge.csv,,,,,
+
+#ELSE,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\judge\*\judge.csv,,,,,
+
+#ENDIF,
+
+////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
+//フェードアウト層,,,,,,,,,,,,,,,,,,,,
+
+//フェードアウト,,,,,,,,,,,,,,,,,,,,
+//timer = 2,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,110,0,0,1,1,1,1,0,2,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,0,255,255,255,1,0,0,0,500,2,0,0,0
+#DST_IMAGE,0,500,0,0,640,480,0,255,255,255,255,1,0,0,0,,,,,
+
+//閉店,,,,,,,,,,,,,,,,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EX\common_parts\close\*\close.csv,,,,,

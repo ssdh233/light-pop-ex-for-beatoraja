@@ -1,0 +1,199 @@
+#ENDOFHEADER,
+
+//SCORE GRAPH LEFT NORMAL
+
+//左右端グラフ用画像　左側は40～44が使用可
+#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\side\SCORE GRAPH\scoregraph.png,,, //40
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //41
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //42
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //43
+#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //44
+
+//op992 左端・右端でのスコアグラフ表示フラグ
+#SETOPTION,992,1,
+
+//ベース
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,1,1,80,480,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,2000,0,0,80,480,0,0,255,255,255,1,0,0,0,3000,0,32,0,0,
+#DST_IMAGE,0,3000,0,0,80,480,0,255,255,255,255,1,0,0,0,,,,,,
+
+//グラフパーツFirstTry(“FIRST TRY”),,,//option100 NOT PLAYED,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,82,252,76,18,1,1,0,0,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,2000,2,364,76,18,0,0,255,255,255,1,0,0,0,3000,0,32,100,0,
+#DST_IMAGE,0,3000,2,364,76,18,0,255,255,255,255,1,0,0,0,,,,,,
+#DST_IMAGE,0,4000,2,364,76,18,0,0,255,255,255,1,0,0,0,,,,,,
+#DST_IMAGE,0,5000,2,364,76,18,0,255,255,255,255,1,0,0,0,,,,,,
+
+//AAA確定,//option220 AAA確定,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,4,91,1,1,1,1,0,40,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,3,118,74,1,0,255,255,255,255,1,0,0,0,0,40,32,220,0,
+
+//AA確定,//option221 AA確定,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,4,91,1,1,1,1,0,40,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,3,145,74,1,0,255,255,255,255,1,0,0,0,0,40,32,221,0,
+
+//A確定,//option222 A確定,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,,
+#SRC_IMAGE,0,40,4,91,1,1,1,1,0,40,0,0,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_IMAGE,0,0,3,173,74,1,0,255,255,255,255,1,0,0,0,0,40,32,222,0,
+
+//ターゲット名,//string1 ターゲット・対戦相手名,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),font,st,align,edit,,,,,,,,,,,,,,,,
+#SRC_TEXT,0,2,1,1,0,,,,,,,,,,,,,,,,
+//DST定義,(NULL),time,x,y,w,size,acc,a,r,g,b,blend,filter,(NULL),(NULL),loop,timer,op,op,op,
+#DST_TEXT,0,2000,40,383,64,22,0,0,255,255,255,1,1,0,0,3000,0,32,0,0,
+#DST_TEXT,0,3000,40,383,64,22,0,255,255,255,255,1,1,0,0,,,,,,
+
+//now score,//type10 1P EXSCORE,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,82,1,22,250,1,1,0,0,10,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,3000,5,340,22,0,2,255,255,255,255,1,0,0,0,4000,0,32,0,0,
+#DST_BARGRAPH,0,4000,5,340,22,-250,2,255,255,255,255,1,0,0,0,,,,,,
+
+//mybest bg,//type13 1P HIGHSCORE最終値,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,148,1,22,250,1,1,0,0,13,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,3000,29,340,22,0,2,255,255,255,255,1,0,0,0,4000,0,32,0,0,
+#DST_BARGRAPH,0,4000,29,340,22,-250,2,255,255,255,255,1,0,0,0,,,,,,
+
+//mybest(FirstTry),//type10 1P EXSCORE,,,,//option100 NOT PLAYED,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,104,1,22,250,1,1,0,0,10,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,3000,29,340,22,0,2,255,255,255,255,1,0,0,0,4000,0,32,100,0,
+#DST_BARGRAPH,0,4000,29,340,22,-250,2,255,255,255,255,1,0,0,0,,,,,,
+
+//mybest,//type12 1P HIGHSCORE現在値,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,104,1,22,250,1,1,0,0,12,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,3000,29,340,22,0,2,255,255,255,255,1,0,0,0,4000,0,32,0,0,
+#DST_BARGRAPH,0,4000,29,340,22,-250,2,255,255,255,255,1,0,0,0,,,,,,
+
+//target bg,//type15 2P(target) EXSCORE最終値,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,148,1,22,250,1,1,0,0,15,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,3000,53,340,22,0,2,255,255,255,255,1,0,0,0,4000,0,32,0,0,
+#DST_BARGRAPH,0,4000,53,340,22,-250,2,255,255,255,255,1,0,0,0,,,,,,
+
+//target,//type14 2P(target) EXSCORE現在値,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,type,muki,op3,,,,,,,,
+#SRC_BARGRAPH,0,40,126,1,22,250,1,1,0,0,14,1,0,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_BARGRAPH,0,3000,53,340,22,0,2,255,255,255,255,1,0,0,0,4000,0,32,0,0,
+#DST_BARGRAPH,0,4000,53,340,22,-250,2,255,255,255,255,1,0,0,0,,,,,,
+
+
+//自己ベあり,,,,,,,,,,,,,,,,,,,,,
+//mybest差分,//number152 ハイスコアと1pスコアの差,,,,,,,,,,,,,,,,,,,,
+//”MYBEST”,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,,
+#SRC_NUMBER,0,40,1,507,420,24,12,2,0,0,152,0,2,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,4000,5,326,35,12,0,255,255,255,255,1,0,0,0,4000,0,32,-34,-100,
+//数値,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,,
+#SRC_NUMBER,0,40,82,384,84,24,12,2,0,0,152,0,4,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,4000,40,326,7,12,0,255,255,255,255,1,0,0,0,4000,0,32,-34,-100,
+//target差分,//number153 ターゲットと1pスコアの差,,,,,,,,,,,,,,,,,,,,
+//”TARGET”,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,,
+#SRC_NUMBER,0,40,1,482,336,24,12,2,0,0,153,0,2,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,4000,12,314,28,12,0,255,255,255,255,1,0,0,0,4000,0,32,-34,-100,
+//数値,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,,
+#SRC_NUMBER,0,40,82,384,84,24,12,2,0,0,153,0,4,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,4000,40,314,7,12,0,255,255,255,255,1,0,0,0,4000,0,32,-34,-100,
+,,,,,,,,,,,,,,,,,,,,,
+//自己ベなし,,,,,,,,,,,,,,,,,,,,,
+//”TARGET”,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,,
+#SRC_NUMBER,0,40,1,482,336,24,12,2,0,0,153,0,2,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,4000,12,326,28,12,0,255,255,255,255,1,0,0,0,4000,0,32,-34,100,
+//数値,,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,,
+#SRC_NUMBER,0,40,82,384,84,24,12,2,0,0,153,0,4,,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,4000,40,326,7,12,0,255,255,255,255,1,0,0,0,4000,0,32,-34,100,
+
+
+//RANK,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,82,271,54,18,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,2000,13,40,54,18,0,0,255,255,255,1,0,0,0,3000,0,32,0,0,
+#DST_IMAGE,0,3000,13,40,54,18,0,255,255,255,255,1,0,,,,,,,
+
+//AAA,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,1,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,200,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+//AA,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,27,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,201,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+//A,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,53,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,202,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+//B,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,79,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,203,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+//C,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,105,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,204,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+//D,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,131,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,205,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+//E,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,157,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,206,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+//F,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,40,171,183,78,26,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,1600,1,58,78,26,0,0,255,255,255,1,0,0,0,2000,0,207,32,0,
+#DST_IMAGE,0,2000,1,58,78,26,0,255,255,255,255,1,0,,,,,,,
+
+

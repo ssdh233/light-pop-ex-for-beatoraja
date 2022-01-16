@@ -1,0 +1,139 @@
+#ENDOFHEADER,
+
+//JUDGE RAINBOW COOL汎用CSV
+
+//ゴースト,,,,,,,,,,,,,,,,,,,,
+
+//option35 TYPE A,,,,,,,,,,,,,,,,,,,,
+#IF,35,
+
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
+#SRC_NUMBER,0,10,100,20,120,24,12,2,0,0,108,0,4,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
+#DST_NUMBER,0,0,295,280,10,12,0,255,255,255,255,1,0,0,0,-1,46,-913,32,0,
+#DST_NUMBER,0,500,295,280,10,12,0,0,255,255,255,1,0,0,0,,,,,,
+
+//option36 TYPE B,,,,,,,,,,,,,,,,,,,,
+#ELSEIF,36,
+
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
+#SRC_NUMBER,0,10,100,20,120,24,12,2,0,0,108,0,4,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_NUMBER,0,0,295,331,10,12,0,255,255,255,255,1,0,0,0,-1,46,-913,32,0,
+#DST_NUMBER,0,500,295,331,10,12,0,0,255,255,255,1,0,0,0,,,,,,
+
+//option37 TYPE C,,,,,,,,,,,,,,,,,,,,
+#ELSEIF,37,
+
+//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
+#SRC_NUMBER,0,10,100,20,120,24,12,2,0,0,108,0,4,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_NUMBER,0,1500,295,381,10,12,0,255,255,255,255,1,0,0,0,1500,40,-913,32,0,
+
+#ENDIF,
+
+
+//ジャッジ表示,,,,,,,,,,,,,,,,,
+//基本的に#SRC_IMAGEと同じですが、コンボの幅の半分だけ左に自動的にシフトして表示されます。,,,,,,,,,,,,,,,,,
+//シフトをオフにする場合(ジャッジとコンボを二列に分けて表示するときとか)は、noshift=1にして下さい,,,,,,,,,,,,,,,,,
+
+//空Poor index = 0,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
+#SRC_NOWJUDGE_1P,0,10,1,91,98,18,1,1,0,46,1,0,0,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWJUDGE_1P,0,0,271,293,98,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWJUDGE_1P,0,500,271,293,98,18,0,0,255,255,255,1,0,0,0,,
+#DST_NOWJUDGE_1P,0,1500,271,293,98,18,0,0,255,255,255,1,0,0,0,,
+
+
+//見逃しPoor index = 1,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
+#SRC_NOWJUDGE_1P,1,10,1,91,98,18,1,1,0,46,1,0,0,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWJUDGE_1P,1,0,271,293,98,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWJUDGE_1P,1,500,271,293,98,18,0,0,255,255,255,1,0,0,0,,
+
+
+//Bad index = 2,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
+#SRC_NOWJUDGE_1P,2,10,1,73,98,18,1,1,0,46,1,0,0,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWJUDGE_1P,2,0,271,293,98,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWJUDGE_1P,2,500,271,293,98,18,0,0,255,255,255,1,0,0,0,,
+
+#IF,976,
+
+//Good index = 3,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
+#SRC_NOWJUDGE_1P,3,10,1,55,98,18,1,1,0,46,1,0,0,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWJUDGE_1P,3,0,271,293,98,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWJUDGE_1P,3,500,271,293,98,18,0,0,255,255,255,1,0,0,0,,
+
+
+//Great index = 4,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
+#SRC_NOWJUDGE_1P,4,10,1,37,98,18,1,1,0,46,1,0,0,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWJUDGE_1P,4,0,271,293,98,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWJUDGE_1P,4,500,271,293,98,18,0,0,255,255,255,1,0,0,0,,
+
+
+//虹色COOL ON
+
+//PERFECT index = 5,,,,,,,,,,,,,,,,,
+//通常COOLと虹色COOLの切り替えのために表示自体は下のIMAGEを使うためalpha0の実質ダミー
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
+#SRC_NOWJUDGE_1P,5,10,1,19,98,18,1,1,0,46,1,0,0,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWJUDGE_1P,5,0,271,293,98,18,0,0,255,255,255,1,0,0,0,0,46
+
+//通常COOL
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,
+#SRC_IMAGE,0,10,1,19,98,18,1,1,0,46,0,0,0,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,271,293,98,18,0,255,255,255,255,1,0,0,0,-1,46,!240,241,0
+#DST_IMAGE,0,500,271,293,98,18,0,0,255,255,255,1,0,0,0,,,,,
+
+//虹色COOL
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,
+#SRC_IMAGE,0,10,1,1,98,18,1,1,0,46,0,0,0,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,271,293,98,18,0,255,255,255,255,1,0,0,0,-1,46,240,241,0
+#DST_IMAGE,0,500,271,293,98,18,0,0,255,255,255,1,0,0,0,,,,,
+
+#ENDIF,
+
+
+//コンボカウント,,,,,,,,,,,,,,,,,
+//DST_JUDGEからの相対位置になります。それ以外は#DST_NUMBERと同じです,,,,,,,,,,,,,,,,,
+
+//空Poor,,,,,,,,,,,,,,,,,
+//Poor,,,,,,,,,,,,,,,,,
+//Bad,,,,,,,,,,,,,,,,,
+//以上はコンボは表示しないので定義しない,,,,,,,,,,,,,,,,,
+
+#IF,976,
+
+//Good index = 3,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
+#SRC_NOWCOMBO_1P,3,10,100,1,180,18,10,1,0,46,0,1,7,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWCOMBO_1P,3,0,40,19,18,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWCOMBO_1P,3,500,40,19,18,18,0,0,255,255,255,1,0,0,0,,
+
+//Great index = 4,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
+#SRC_NOWCOMBO_1P,4,10,100,1,180,18,10,1,0,46,0,1,7,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWCOMBO_1P,4,0,40,19,18,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWCOMBO_1P,4,500,40,19,18,18,0,0,255,255,255,1,0,0,0,,
+
+//Just Great index = 5,,,,,,,,,,,,,,,,,
+//SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
+#SRC_NOWCOMBO_1P,5,10,100,1,180,18,10,1,0,46,0,1,7,,,,
+//DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
+#DST_NOWCOMBO_1P,5,0,40,19,18,18,0,255,255,255,255,1,0,0,0,-1,46
+#DST_NOWCOMBO_1P,5,500,40,19,18,18,0,0,255,255,255,1,0,0,0,,
+
+#ENDIF,
