@@ -337,7 +337,7 @@
 
 //beatoraja用拡張
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\laser\LP_DEFAULT.png,,,,,,,,,,,,,,,,,,,,, // gr 50
+#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\laser\*.png,,,,,,,,,,,,,,,,,,,,, // gr 50
 
 #IMAGESET,0,50,153,0,28,358,1,1,,,,,,,,,,,,,, // 0 bad
 #IMAGESET,0,50,0,0,28,358,1,1,,,,,,,,,,,,,, // 1 cool
@@ -395,72 +395,6 @@
 #SRC_IMAGESET,0,129,509,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
 #DST_IMAGE,0,0,408,358,28,-358,0,255,255,255,255,0,1,0,0,-1,129,0,0,0,3,
 #DST_IMAGE,0,100,422,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
-
-//op983 判定連動レーザー
-//940 アニメーションNORMAL
-#IF,974,983,940,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\normal-judge-linked.csv,,,,,
-
-//941 アニメーションFAST
-#ELSEIF,974,983,941,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\fast-judge-linked.csv,,,,,
-
-//942 アニメーションVERYFAST
-#ELSEIF,974,983,942,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\veryfast-judge-linked.csv,,,,,
-
-//943 アニメーションINSTANT
-#ELSEIF,974,983,943,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\instant-judge-linked.csv,,,,,
-
-//通常
-//940 アニメーションNORMAL、945 長さFULL
-#ELSEIF,974,940,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\normal-full.csv,,,,,
-
-//940 アニメーションNORMAL、946 長さHALF
-#ELSEIF,974,940,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\normal-half.csv,,,,,
-
-//940 アニメーションNORMAL、947 長さQUARTER
-#ELSEIF,974,940,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\normal-quarter.csv,,,,,
-
-//941 アニメーションFAST、945 長さFULL
-#ELSEIF,974,941,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\fast-full.csv,,,,,
-
-//941 アニメーションFAST、946 長さHALF
-#ELSEIF,974,941,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\fast-half.csv,,,,,
-
-//941 アニメーションFAST、947 長さQUARTER
-#ELSEIF,974,941,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\fast-quarter.csv,,,,,
-
-//942 アニメーションVERYFAST、945 長さFULL
-#ELSEIF,974,942,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\veryfast-full.csv,,,,,
-
-//942 アニメーションVERYFAST、946 長さHALF
-#ELSEIF,974,942,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\veryfast-half.csv,,,,,
-
-//942 アニメーションVERYFAST、947 長さQUARTER
-#ELSEIF,974,942,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\veryfast-quarter.csv,,,,,
-
-//943 アニメーションINSTANT、945 長さFULL
-#ELSEIF,974,943,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\instant-full.csv,,,,,
-
-//943 アニメーションINSTANT、946 長さHALF
-#ELSEIF,974,943,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\instant-half.csv,,,,,
-
-//943 アニメーションINSTANT、947 長さQUARTER
-#ELSEIF,974,943,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\laser_csv\instant-quarter.csv,,,,,
 
 #ENDIF,
 
