@@ -5,7 +5,7 @@ Basically [light pop ex](https://mistyblue.info/lpex.html), with some fixes for 
 * [x] judge counter display fix
 * [x] gauge display fix
 * [ ] exhard style gauge
-* [ ] fast/slow display
+* [x] fast/slow display (but the design is a bit weird now)
 * [ ] (maybe) upscale image source for better display on 1080p
 * and so on...
 
