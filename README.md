@@ -18,7 +18,11 @@ Light Pop EXからの変更点：
 * [ ] ゲージ背景の表示修正(現在"Groove Gauge -----------------"の"-----"が少し長い、あとハードゲージで表示させたくない)
 * [ ] などなど
 
-もし他にご要望がある方、あるいは協力したい方（特に素材作り！）がいらっしゃたら、気軽にIssueとかで連絡してください。
+もし他にご要望がある方、あるいは協力したい方がいらっしゃたら、気軽にIssueとかで連絡してください。
+
+## ダウンロード＆使い方
+https://github.com/ssdh233/light-pop-ex-for-beatoraja/releases
+で、OA_LP_EXB.zipをダウンロードし、解凍したらOA_LP_EXBフォルダをそのままbeatorajaのskinフォルダに移動すればおｋ。
 
 ## Special Thanks
 * Light Pop EXの製作者である[misty.ls04氏](https://mistyblue.info/index.html)
@@ -44,6 +48,11 @@ Things I plan to change from now:
 * [ ] and so on...
 
 If you have any requests, or if you want to contribute on this project, feel free to submit an issue at any time.
+
+## Download & How to use
+https://github.com/ssdh233/light-pop-ex-for-beatoraja/releases
+
+Download OA_LP_EXB.zip from above link, unzip it and then move OA_LP_EXB folder to beatoraja/skin folder. That's it.
 
 ## Special Thanks
 * [misty.ls04](https://mistyblue.info/index.html), the author of Light Pop EX
