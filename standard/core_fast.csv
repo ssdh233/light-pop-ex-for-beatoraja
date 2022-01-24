@@ -118,11 +118,11 @@
 
 //op982 3列判定表示
 #IF,982,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\3line_frame.csv,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\common_csv\3line_frame.csv,,
 #ENDIF,
 
 //本体
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\main_fast.csv,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\frame\*\main_fast.csv,
 
 //////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
 //キャラ
@@ -280,14 +280,14 @@
 
 
 //左側
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\chara\standard\*\left.csv,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\chara\standard\*\left.csv,
 
 //右側
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\chara\standard/*\right.csv,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\chara\standard/*\right.csv,
 
 //////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
 //スコアグラフ,,,,,,,,,,,,,,,,,,,,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\graph\*\fast.csv,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\graph\*\fast.csv,
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
 //レーザー,,,,,,,,,,,,,,,,,,,,
@@ -295,79 +295,79 @@
 //op983 判定連動レーザー
 //940 アニメーションNORMAL
 #IF,974,983,940,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-judge-linked.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-judge-linked.csv,,,,,
 
 //941 アニメーションFAST
 #ELSEIF,974,983,941,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-judge-linked.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-judge-linked.csv,,,,,
 
 //942 アニメーションVERYFAST
 #ELSEIF,974,983,942,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-judge-linked.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-judge-linked.csv,,,,,
 
 //943 アニメーションINSTANT
 #ELSEIF,974,983,943,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-judge-linked.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-judge-linked.csv,,,,,
 
 //通常
 //940 アニメーションNORMAL、945 長さFULL
 #ELSEIF,974,940,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-full.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-full.csv,,,,,
 
 //940 アニメーションNORMAL、946 長さHALF
 #ELSEIF,974,940,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-half.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-half.csv,,,,,
 
 //940 アニメーションNORMAL、947 長さQUARTER
 #ELSEIF,974,940,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\normal-quarter.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-quarter.csv,,,,,
 
 //941 アニメーションFAST、945 長さFULL
 #ELSEIF,974,941,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-full.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-full.csv,,,,,
 
 //941 アニメーションFAST、946 長さHALF
 #ELSEIF,974,941,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-half.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-half.csv,,,,,
 
 //941 アニメーションFAST、947 長さQUARTER
 #ELSEIF,974,941,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\fast-quarter.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-quarter.csv,,,,,
 
 //942 アニメーションVERYFAST、945 長さFULL
 #ELSEIF,974,942,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-full.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-full.csv,,,,,
 
 //942 アニメーションVERYFAST、946 長さHALF
 #ELSEIF,974,942,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-half.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-half.csv,,,,,
 
 //942 アニメーションVERYFAST、947 長さQUARTER
 #ELSEIF,974,942,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\veryfast-quarter.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-quarter.csv,,,,,
 
 //943 アニメーションINSTANT、945 長さFULL
 #ELSEIF,974,943,945,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-full.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-full.csv,,,,,
 
 //943 アニメーションINSTANT、946 長さHALF
 #ELSEIF,974,943,946,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-half.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-half.csv,,,,,
 
 //943 アニメーションINSTANT、947 長さQUARTER
 #ELSEIF,974,943,947,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\laser_csv\instant-quarter.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-quarter.csv,,,,,
 
 #ENDIF,
 
 //LN用レーザーカバー
 #IF,916,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\ln_laser_hider_lane.csv,,,,,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\ln_laser_hider_frame.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\common_csv\ln_laser_hider_lane.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\frame\*\ln_laser_hider_frame.csv,,,,,
 #ENDIF,
 //op913 GHOST TYPE EX
 #IF,916,913,32,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\ln_laser_hider_ghost_ex.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\common_csv\ln_laser_hider_ghost_ex.csv,,,,,
 #ENDIF,
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
@@ -382,7 +382,7 @@
 //[ノート関連定義],,,,,,,,,,,,,
 //別ファイルに分離
 
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\obj\*\obj.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\obj\*\obj.csv,,,,,
 
 
 //サドプラ,,,,,,,,,,,,,,,,,,,,
@@ -406,32 +406,32 @@
 
 //950 ボム表示時間 NORMAL,958 ボム位置修正 OFF,
 #IF,975,950,958,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\normal-nofix.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\bomb_csv\normal-nofix.csv,,,,,
 
 //950 ボム表示時間 NORMAL,959 ボム位置修正 ON,
 #ELSEIF,975,950,959,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\normal-fix.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\bomb_csv\normal-fix.csv,,,,,
 
 //951 ボム表示時間 FAST,958 ボム位置修正 OFF,
 #ELSEIF,975,951,958,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\fast-nofix.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\bomb_csv\fast-nofix.csv,,,,,
 
 //951 ボム表示時間 FAST,959 ボム位置修正 ON,
 #ELSEIF,975,951,959,
-#INCLUDE,LR2files\Theme\OA_LP_EX\standard\bomb_csv\fast-fix.csv,,,,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\bomb_csv\fast-fix.csv,,,,,
 
 #ENDIF,
 
 /////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
 //フレームパーツ
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\frame\*\parts_fast.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\frame\*\parts_fast.csv,,,,,
 
 //BOTTOM INFO
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\bottom_info\*\left.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\bottom_info\*\left.csv,,,,,
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
 //フルコンエフェクト他,,,,,,,,,,,,,,,,,,,,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\fullcombo\*\fc.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\fullcombo\*\fc.csv,,,,,
 
 /////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
 
@@ -439,10 +439,10 @@
 
 //op982 3列判定表示
 #IF,982,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\common_csv\3line_judge.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\common_csv\3line_judge.csv,,,,,
 
 #ELSE,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\standard\judge\*\judge.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\standard\judge\*\judge.csv,,,,,
 
 #ENDIF,
 
@@ -458,4 +458,4 @@
 #DST_IMAGE,0,500,0,0,640,480,0,255,255,255,255,1,0,0,0,,,,,
 
 //閉店,,,,,,,,,,,,,,,,,,,,
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\common_parts\close\*\close.csv,,,,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\common_parts\close\*\close.csv,,,,,

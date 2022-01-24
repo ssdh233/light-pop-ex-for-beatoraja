@@ -1,5 +1,5 @@
 //,type,title,maker,thumbnail
-#INFORMATION,4,Light Pop EX -Wide- v1.16.1224.2,misty.ls04,LR2files\Theme\OA_LP_EX\.png
+#INFORMATION,4,Light Pop EX-B v0.1.0,ssdh233,LR2files\Theme\OA_LP_EXB\.png
 //typeは,,,,
 //0 7KEYS,,,,
 //1 5KEYS,,,,
@@ -61,37 +61,37 @@
 #CUSTOMOPTION,OADX+ LINK,978,OFF,ON,
 
 
-#CUSTOMFILE,FRAME,.\LR2files\Theme\OA_LP_EX\wide\frame\*,LPEX Standard,
+#CUSTOMFILE,FRAME,.\LR2files\Theme\OA_LP_EXB\wide\frame\*,LPEX Standard+,
 
-#CUSTOMFILE,SEQUENCE,.\LR2files\Theme\OA_LP_EX\wide\obj\*,PM,
+#CUSTOMFILE,SEQUENCE,.\LR2files\Theme\OA_LP_EXB\wide\obj\*,PM,
 
-#CUSTOMFILE,LANE,.\LR2files\Theme\OA_LP_EX\wide\lane\*.png,LPEX Default,
+#CUSTOMFILE,LANE,.\LR2files\Theme\OA_LP_EXB\wide\lane\*.png,LPEX Default,
 
-#CUSTOMFILE,BOMB,.\LR2files\Theme\OA_LP_EX\common_parts\bomb\*.png,Light Pop,
-#CUSTOMFILE,LASER,.\LR2files\Theme\OA_LP_EX\wide\laser\*.png,FULL,
-#CUSTOMFILE,LANE COVER,.\LR2files\Theme\OA_LP_EX\wide\lanecover\*.png,LPEX Default,
+#CUSTOMFILE,BOMB,.\LR2files\Theme\OA_LP_EXB\common_parts\bomb\*.png,Light Pop,
+#CUSTOMFILE,LASER,.\LR2files\Theme\OA_LP_EXB\wide\laser\*.png,FULL,
+#CUSTOMFILE,LANE COVER,.\LR2files\Theme\OA_LP_EXB\wide\lanecover\*.png,LPEX Default,
 
-#CUSTOMFILE,JUDGE,.\LR2files\Theme\OA_LP_EX\wide\judge\*,LPEX Default,
+#CUSTOMFILE,JUDGE,.\LR2files\Theme\OA_LP_EXB\wide\judge\*,LPEX Default,
 
-#CUSTOMFILE,SCOREGRAPH TYPE,.\LR2files\Theme\OA_LP_EX\wide\graph\*,Default,
+#CUSTOMFILE,SCOREGRAPH TYPE,.\LR2files\Theme\OA_LP_EXB\wide\graph\*,Default,
 
-#CUSTOMFILE,LEFT SIDE,.\LR2files\Theme\OA_LP_EX\wide\side\*,NONE,
-#CUSTOMFILE,RIGHT SIDE,.\LR2files\Theme\OA_LP_EX\wide\side/*,NONE,
+#CUSTOMFILE,LEFT SIDE,.\LR2files\Theme\OA_LP_EXB\wide\side\*,NONE,
+#CUSTOMFILE,RIGHT SIDE,.\LR2files\Theme\OA_LP_EXB\wide\side/*,NONE,
 
-#CUSTOMFILE,LEFT CHARA,.\LR2files\Theme\OA_LP_EX\chara\wide\*,NONE,
-#CUSTOMFILE,RIGHT CHARA,.\LR2files\Theme\OA_LP_EX\chara\wide/*,NONE,
-#CUSTOMFILE,CHARA BACKGROUND,.\LR2files\Theme\OA_LP_EX\wide\chara_bg\*.png,NONE,
+#CUSTOMFILE,LEFT CHARA,.\LR2files\Theme\OA_LP_EXB\chara\wide\*,NONE,
+#CUSTOMFILE,RIGHT CHARA,.\LR2files\Theme\OA_LP_EXB\chara\wide/*,NONE,
+#CUSTOMFILE,CHARA BACKGROUND,.\LR2files\Theme\OA_LP_EXB\wide\chara_bg\*.png,NONE,
 
-#CUSTOMFILE,BACK GROUND,.\LR2files\Theme\OA_LP_EX\background\*.png,Light Pop,
+#CUSTOMFILE,BACK GROUND,.\LR2files\Theme\OA_LP_EXB\background\*.png,Light Pop,
 
-#CUSTOMFILE,BOTTOM INFO LEFT,.\LR2files\Theme\OA_LP_EX\wide\bottom_info\*,NONE,
-#CUSTOMFILE,BOTTOM INFO RIGHT,.\LR2files\Theme\OA_LP_EX\wide\bottom_info/*,NONE,
+#CUSTOMFILE,BOTTOM INFO LEFT,.\LR2files\Theme\OA_LP_EXB\wide\bottom_info\*,NONE,
+#CUSTOMFILE,BOTTOM INFO RIGHT,.\LR2files\Theme\OA_LP_EXB\wide\bottom_info/*,NONE,
 
-#CUSTOMFILE,BARLINE,.\LR2files\Theme\OA_LP_EX\common_parts\barline\*.png,OFF,
+#CUSTOMFILE,BARLINE,.\LR2files\Theme\OA_LP_EXB\common_parts\barline\*.png,OFF,
 
-#CUSTOMFILE,FULLCOMBO EFFECT,.\LR2files\Theme\OA_LP_EX\wide\fullcombo\*,LPEX Default,
+#CUSTOMFILE,FULLCOMBO EFFECT,.\LR2files\Theme\OA_LP_EXB\wide\fullcombo\*,LPEX Default,
 
-#CUSTOMFILE,FAILED SHUTTER,.\LR2files\Theme\OA_LP_EX\common_parts\close\*,Light Pop,
+#CUSTOMFILE,FAILED SHUTTER,.\LR2files\Theme\OA_LP_EXB\common_parts\close\*,Light Pop,
 
 
 //INFORMATIONとCUSTOMIZEの終了時に入れてください。,,,,,,,,
@@ -102,7 +102,7 @@
 //#CUSTOMOPTIONで設定したoption値は、#includeで参照しているスキンにも有効です,,,
 
 //exsetting読み込み
-#INCLUDE,LR2files\Theme\OA_LP_EX\exsetting.csv,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\exsetting.csv,
 
 
 //共通項目
@@ -119,63 +119,63 @@
 
 //[画像定義],,,,
 //画像定義,filename,,,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\frame\*\parts.png,,, //0
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\frame\*\main.png,,, //1
-#IMAGE,.\LR2files\Theme\OA_LP_EX\common_parts\close\*\close.png,,, //2
-#IMAGE,.\LR2files\Theme\OA_LP_EX\background\*.png,,, //3
-#IMAGE,.\LR2files\Theme\OA_LP_EX\common_parts\bomb\*.png,,, //4
-#IMAGE,.\LR2files\Theme\OA_LP_EX\common_parts\barline\*.png,,, //5
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\fullcombo\*\fc.png,,, //6
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\frame\*\parts.png,,, //0
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\frame\*\main.png,,, //1
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\common_parts\close\*\close.png,,, //2
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\background\*.png,,, //3
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\common_parts\bomb\*.png,,, //4
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\common_parts\barline\*.png,,, //5
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\fullcombo\*\fc.png,,, //6
 
 #IF,913,32,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\ghost_type_ex.png,,, //7
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\ghost_type_ex.png,,, //7
 
 #ELSE,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //7
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //7
 
 #ENDIF,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\lanecover\*.png, //8
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\obj\*\obj.png,,, //9
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\lanecover\*.png, //8
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\obj\*\obj.png,,, //9
 
 #IF,982,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\judge\Light Pop\judge.png,,, //10
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\judge\Light Pop\judge.png,,, //10
 
 #ELSE,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\judge\*\judge.png,,, //10
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\judge\*\judge.png,,, //10
 
 #ENDIF,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\lane\*.png,,, //11
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\laser\*.png,,, //12
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\lane\*.png,,, //11
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\laser\*.png,,, //12
 
 #IF,913,32,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\ghost_type_ex_2.png,,, //13
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\ghost_type_ex_2.png,,, //13
 
 #ELSE,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //13
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //13
 
 #ENDIF,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\graph\*\graph.png,,, //14
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\chara_bg\*.png,,, //15
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\graph\*\graph.png,,, //14
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\chara_bg\*.png,,, //15
 
 #IF,983,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\laser\LPEX Default.png,,, //16
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\laser\YELLOW.png,,, //17
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\laser\RED.png,,, //18
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\laser\BLUE.png,,, //19
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\laser\LPEX Default.png,,, //16
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\laser\YELLOW.png,,, //17
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\laser\RED.png,,, //18
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\laser\BLUE.png,,, //19
 
 #ELSE,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //16
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //17
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //18
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //19
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //16
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //17
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //18
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //19
 
 #ENDIF,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\bottom_info\*\bottom.png,,, //20
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\bottom_info/*\bottom.png,,, //21
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\bottom_info\*\bottom.png,,, //20
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\bottom_info/*\bottom.png,,, //21
 
 //PMコースリザルト用スキンリンク
 #INCLUDE,.\LR2files\Theme\PM_COURSE\skinlink_course_setting.csv, //22
@@ -185,7 +185,7 @@
 
 //読み込みに失敗した場合はgr22にダミーを指定
 #ELSE,
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png, //22
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png, //22
 
 #ENDIF,
 
@@ -200,7 +200,7 @@
 
 #ELSE,
 //読み込みに失敗した場合はgr23にダミーを指定
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //23
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //23
 
 #ENDIF,
 
@@ -227,8 +227,8 @@
 
 #ELSE,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//24
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//24
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ENDIF,
 
@@ -242,37 +242,37 @@
 
 #ELSEIF,979,100,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ELSEIF,979,101,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ELSEIF,979,102,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ELSEIF,979,103,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ELSEIF,979,104,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ELSEIF,979,142,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ELSEIF,979,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//24
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,,//25
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//24
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,,//25
 
 #ENDIF,
 
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //26
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //26
 
 //gr27-29はフレーム用追加画像で予約済み
 
@@ -286,7 +286,7 @@
 //各フレームのcommon.csvで定義
 
 //フレームのcommon.csv読み込み
-#INCLUDE,.\LR2files\Theme\OA_LP_EX\wide\frame\*\common.csv,,
+#INCLUDE,.\LR2files\Theme\OA_LP_EXB\wide\frame\*\common.csv,,
 
 //壁紙システム無効化処理
 #IF,993,
@@ -326,15 +326,15 @@
 //分岐
 //LOAD START TIME FAST
 #IF,937,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\core_fast.csv,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\wide\core_fast.csv,,
 
 //LOAD START TIME NORMAL
 #ELSE,
-#INCLUDE,LR2files\Theme\OA_LP_EX\wide\core_normal.csv,,
+#INCLUDE,LR2files\Theme\OA_LP_EXB\wide\core_normal.csv,,
 
 #ENDIF,
 
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\fastslow.png,,, //51
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\fastslow.png,,, //51
 
 #SRC_IMAGE,0,51,0,0,480,160,1,1,0,46,0,0,0,,,,,,,,,
 #DST_IMAGE,0,0,225,265,36,12,0,255,255,255,255,1,0,0,0,-1,46,1242,998,0,3,33

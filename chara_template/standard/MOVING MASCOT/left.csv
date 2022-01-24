@@ -1,11 +1,11 @@
 #ENDOFHEADER,
 
 //キャラ用画像　左側は30～34が使用可
-#IMAGE,.\LR2files\Theme\OA_LP_EX\chara\standard\*\mascot.png,,, //30
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //31
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //32
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //33
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //34
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\chara\standard\*\mascot.png,,, //30
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //31
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //32
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //33
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //34
 
 //名前用の画像を定義した場合はop990をオンにすれば残り時間が消えます
 //#SETOPTION,990,1,

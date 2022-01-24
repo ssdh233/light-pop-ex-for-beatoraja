@@ -3,11 +3,11 @@
 //COMBO GRAPH LEFT NORMAL
 
 //左右端グラフ用画像　左側は40～44が使用可
-#IMAGE,.\LR2files\Theme\OA_LP_EX\wide\side\COMBO GRAPH\combograph.png,,, //40
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //41
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //42
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //43
-#IMAGE,.\LR2files\Theme\OA_LP_EX\dummy.png,,, //44
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\wide\side\COMBO GRAPH\combograph.png,,, //40
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //41
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //42
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //43
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\dummy.png,,, //44
 
 #IF,32,
 
