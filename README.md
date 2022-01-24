@@ -1,6 +1,6 @@
 **English follows Japanese.**
 
-# Light Pop EX-B v0.1.0
+# Light Pop EX-B v0.1.1
 
 [Light Pop EX](https://mistyblue.info/lpex.html)の**beatoraja用**改造スキンです。現時点はwide(16:9)のみ対応しております。
 
@@ -26,7 +26,7 @@ Light Pop EXからの変更点：
 
 <hr/>
 
-# Light Pop EX-B v0.1.0
+# Light Pop EX-B
 
 [Light Pop EX](https://mistyblue.info/lpex.html)'s beatoraja version. Currently only wide(16:9) ver is available.
 
