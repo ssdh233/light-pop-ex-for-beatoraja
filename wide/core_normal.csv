@@ -312,6 +312,108 @@
 
 #ENDIF,
 
+// beatorajaで最初BGAをカバーするために壁紙のフェードアウトを実装
+
+#IF,993,
+
+#ELSEIF,191,934,910,
+//壁紙 op=191 stagefile有り grは100を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,255,255,255,255,1,0,0,0,3000,0,191,0,0
+#DST_IMAGE,0,2000,0,0,640,480,0,255,255,255,255,1,0,0,0,0,0,191,0,0
+#DST_IMAGE,0,3000,0,0,640,480,0,0,255,255,255,1,0,0,0,,,,,
+
+#ELSEIF,191,934,911,
+//壁紙 op=191 stagefile有り grは100を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,80,0,480,480,0,255,255,255,255,1,1,0,0,3000,0,191,0,0
+#DST_IMAGE,0,2000,80,0,480,480,0,255,255,255,255,1,1,0,0,0,0,191,0,0
+#DST_IMAGE,0,3000,80,0,480,480,0,0,255,255,255,1,1,0,0,,,,,
+
+#ELSEIF,195,932,910,
+//壁紙 op=195 backbmp有り grは101を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,255,255,255,255,1,0,0,0,3000,0,195,0,0
+#DST_IMAGE,0,2000,0,0,640,480,255,255,255,255,255,1,0,0,0,,,,,
+#DST_IMAGE,0,2000,0,0,640,480,0,255,255,255,255,1,0,0,0,,,,,
+
+#ELSEIF,195,932,911,
+//壁紙 op=195 backbmp有り grは101を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,80,0,480,480,0,255,255,255,255,1,1,0,0,3000,0,195,0,0
+#DST_IMAGE,0,2000,80,0,480,480,0,255,255,255,255,1,1,0,0,,,,,
+#DST_IMAGE,0,3000,80,0,480,480,0,0,255,255,255,1,1,0,0,,,,,
+
+#ELSEIF,910,
+
+//壁紙 op=194 backbmp無し,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,3,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,255,255,255,255,1,0,0,0,3000,0,0,0,0
+#DST_IMAGE,0,2000,0,0,640,480,0,255,255,255,255,1,0,0,0,,,,,
+#DST_IMAGE,0,3000,0,0,640,480,0,0,255,255,255,1,0,0,0,,,,,
+
+#ELSEIF,911,
+
+//壁紙 op=194 backbmp無し,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,3,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,80,0,480,480,0,255,255,255,255,1,1,0,0,3000,0,0,0,0
+#DST_IMAGE,0,2000,80,0,480,480,0,255,255,255,255,1,1,0,0,,,,,
+#DST_IMAGE,0,3000,80,0,480,480,0,0,255,255,255,1,1,0,0,,,,,
+
+#ENDIF,
+
+
+// TO REMOVE
+#IF,993,
+
+#ELSEIF,191,934,910,
+//壁紙 op=191 stagefile有り grは100を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,255,255,255,255,1,0,0,0,3000,0,191,0,0
+#DST_IMAGE,0,2000,0,0,640,480,0,255,255,255,255,1,0,0,0,0,0,191,0,0
+#DST_IMAGE,0,3000,0,0,640,480,0,0,255,255,255,1,0,0,0,,,,,
+
+#ELSEIF,191,934,911,
+//壁紙 op=191 stagefile有り grは100を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,100,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,255,255,255,255,1,0,0,0,3000,0,191,0,0
+#DST_IMAGE,0,2000,0,0,640,480,0,255,255,255,255,1,0,0,0,0,0,191,0,0
+#DST_IMAGE,0,3000,0,0,640,480,0,0,255,255,255,1,0,0,0,,,,,
+
+#ELSEIF,195,932,910,
+//壁紙 op=195 backbmp有り grは101を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,255,255,255,255,1,0,0,0,3000,0,191,0,0
+#DST_IMAGE,0,2000,0,0,640,480,0,255,255,255,255,1,0,0,0,0,0,191,0,0
+#DST_IMAGE,0,3000,0,0,640,480,0,0,255,255,255,1,0,0,0,,,,,
+
+#ELSEIF,195,932,911,
+//壁紙 op=195 backbmp有り grは101を指定すべし,,,,,,,,,,,,,,,,,,,,
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,101,0,0,640,480,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,0,0,0,640,480,0,255,255,255,255,1,0,0,0,3000,0,191,0,0
+#DST_IMAGE,0,2000,0,0,640,480,0,255,255,255,255,1,0,0,0,0,0,191,0,0
+#DST_IMAGE,0,3000,0,0,640,480,0,0,255,255,255,1,0,0,0,,,,,
+
 
 //左側
 #INCLUDE,.\LR2files\Theme\OA_LP_EXB\chara\wide\*\left.csv,
