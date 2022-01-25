@@ -537,7 +537,7 @@
 
 // beatoraja—p
 //SRC’è‹`,index,gr,x,y,w,h,div_x,div_y,cycle,timer,add_x,add_y,,,,,
-#SRC_GROOVEGAUGE,0,29,0,0,40,28,4,1,0,0,0,0,24,3,0,2500,,,,,,
+#SRC_GROOVEGAUGE,0,29,0,0,56,28,4,1,0,0,0,0,24,3,0,2500,,,,,,
 //DST’è‹`,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_GROOVEGAUGE,0,2000,200,429,240,28,0,0,255,255,255,1,0,0,0,3000,0
 #DST_GROOVEGAUGE,0,3000,200,429,240,28,0,255,255,255,255,1,0,0,0,,
