@@ -64,182 +64,40 @@
 #DST_NUMBER,0,2000,500,373,13,22,0,0,255,255,255,1,0,0,0,3000,0
 #DST_NUMBER,0,3000,500,373,13,22,0,255,255,255,255,1,0,0,0,,
 
+
 //ジャッジカウンタ(4桁),,,,,,,,,,,,,,,,,
 //PERFECT 1P 110,,,,,,,,,,,,,,,,,
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,0,1,144,66,12,11,0,0,0,110,0,4,,,,
+#SRC_NUMBER,0,0,1,144,66,12,11,1,0,0,110,0,4,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,407,463,6,12,0,255,255,255,255,1,0,0,0,3000,0
+#DST_NUMBER,0,3000,407,463,6,12,0,255,255,255,255,0,0,0,0,3000,0,2241,0,0,,
 
 //GREAT 1P 111,,,,,,,,,,,,,,,,,
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
 #SRC_NUMBER,0,0,1,157,66,12,11,0,0,0,111,0,4,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,362,463,6,12,0,255,255,255,255,1,0,0,0,3000,0
+#DST_NUMBER,0,3000,362,463,6,12,0,255,255,255,255,1,0,0,0,3000,0,2242,0,0,,
 
 //GOOD 1P 112,,,,,,,,,,,,,,,,,
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
 #SRC_NUMBER,0,0,1,170,66,12,11,0,0,0,112,0,4,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,317,463,6,12,0,255,255,255,255,1,0,0,0,3000,0
+#DST_NUMBER,0,3000,317,463,6,12,0,255,255,255,255,1,0,0,0,3000,0,2243,0,0,,
 
 //BAD 1P 113,,,,,,,,,,,,,,,,,
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
 #SRC_NUMBER,0,0,1,183,66,12,11,0,0,0,113,0,4,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,272,463,6,12,0,255,255,255,255,1,0,0,0,3000,0
+#DST_NUMBER,0,3000,272,463,6,12,0,255,255,255,255,1,0,0,0,3000,0,2244,0,0,,
 
 //POOR 1P 114,,,,,,,,,,,,,,,,,
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
 #SRC_NUMBER,0,0,1,196,66,12,11,0,0,0,114,0,4,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,227,463,6,12,0,255,255,255,255,1,0,0,0,3000,0
+#DST_NUMBER,0,3000,227,463,6,12,0,255,255,255,255,1,0,0,0,3000,0,2245,!2246,0,,
 
-//ジャッジカウンタ隠し
-//赤ゲージ
-//PERFECT 1P 110,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,324,440,18,10,0,0,0,110,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,388,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,43,0,0
-
-//GREAT 1P 111,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,286,440,18,10,0,0,0,111,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,343,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,43,0,0
-
-//GOOD 1P 112,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,248,440,18,10,0,0,0,112,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,298,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,43,0,0
-
-//BAD 1P 113,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,210,440,18,10,0,0,0,113,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,253,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,43,0,0
-
-//POOR 1P 114,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,172,440,18,10,0,0,0,114,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,208,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,43,0,0
-
-//通常
-
-//青
-//PERFECT 1P 110,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,305,440,18,10,0,0,0,110,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,388,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,42,0,0
-
-//GREAT 1P 111,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,267,440,18,10,0,0,0,111,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,343,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,42,0,0
-
-//GOOD 1P 112,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,229,440,18,10,0,0,0,112,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,298,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,42,0,0
-
-//BAD 1P 113,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,191,440,18,10,0,0,0,113,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,253,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,42,0,0
-
-//POOR 1P 114,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,153,440,18,10,0,0,0,114,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,208,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,42,0,0
-
-//赤
-//PERFECT 1P 110,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,324,440,18,10,0,0,0,110,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,388,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,238,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,324,440,18,10,0,0,0,110,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,388,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,239,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,324,440,18,10,0,0,0,110,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,388,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,240,42,0,
-
-//GREAT 1P 111,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,286,440,18,10,0,0,0,111,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,343,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,238,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,286,440,18,10,0,0,0,111,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,343,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,239,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,286,440,18,10,0,0,0,111,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,343,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,240,42,0,
-
-//GOOD 1P 112,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,248,440,18,10,0,0,0,112,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,298,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,238,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,248,440,18,10,0,0,0,112,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,298,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,239,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,248,440,18,10,0,0,0,112,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,298,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,240,42,0,
-
-//BAD 1P 113,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,210,440,18,10,0,0,0,113,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,253,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,238,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,210,440,18,10,0,0,0,113,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,253,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,239,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,210,440,18,10,0,0,0,113,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,253,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,240,42,0,
-
-//POOR 1P 114,,,,,,,,,,,,,,,,,
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,172,440,18,10,0,0,0,114,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,208,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,238,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,172,440,18,10,0,0,0,114,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,208,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,239,42,0,
-
-//SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NUMBER,0,28,1,172,440,18,10,0,0,0,114,1,1,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
-#DST_NUMBER,0,3000,208,460,44,18,0,255,255,255,255,1,0,0,0,3000,0,240,42,0,
+#SRC_NUMBER,0,0,1,196,66,12,11,0,0,0,114,0,4,,,,
+#DST_NUMBER,0,3000,227,463,6,12,0,255,255,255,255,1,0,0,0,3000,0,2246,0,0,,
 
 
 //op990 左側キャラ名前定義済み
