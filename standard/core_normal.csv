@@ -66,7 +66,7 @@
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,0,0,640,480,0,255,255,255,255,0,1,0,0,0,0,0,0,0
+#DST_BGA,0,0,0,0,640,480,0,255,255,255,255,0,1,0,0,0,0,81,0,0
 
 #ENDIF,
 
@@ -251,30 +251,30 @@
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,16,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,16,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,16,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,16,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,496,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,496,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,496,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,496,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 //でかい,,,,,,,,,,,,,,,,,,,,
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,16,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,0,0
+#DST_BGA,0,0,16,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,81,0
 
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,496,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,0,0
+#DST_BGA,0,0,496,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,81,0
 
 #ENDIF,
 
@@ -292,73 +292,69 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////,,,,,,,,,,,,,,,,,,,,
 //レーザー,,,,,,,,,,,,,,,,,,,,
 
-//op983 判定連動レーザー
-//940 アニメーションNORMAL
-#IF,974,983,940,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-judge-linked.csv,,,,,
+//beatoraja用拡張
 
-//941 アニメーションFAST
-#ELSEIF,974,983,941,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-judge-linked.csv,,,,,
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\standard\laser\FULL.png,,,,,,,,,,,,,,,,,,,,, // gr 40
 
-//942 アニメーションVERYFAST
-#ELSEIF,974,983,942,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-judge-linked.csv,,,,,
+#IMAGESET,0,40,204,0,38,358,1,1,,,,,,,,,,,,,, // 0 bad
+#IMAGESET,0,40,0,0,38,358,1,1,,,,,,,,,,,,,, // 1 cool
+#IMAGESET,0,40,68,0,38,358,1,1,,,,,,,,,,,,,, // 2 perfect
+#IMAGESET,0,40,136,0,38,358,1,1,,,,,,,,,,,,,, // 3 good
+#IMAGESET,0,40,242,0,30,358,1,1,,,,,,,,,,,,,, // 4 bad
+#IMAGESET,0,40,38,0,30,358,1,1,,,,,,,,,,,,,, // 5 cool
+#IMAGESET,0,40,106,0,30,358,1,1,,,,,,,,,,,,,, // 6 perfect
+#IMAGESET,0,40,280,0,30,358,1,1,,,,,,,,,,,,,, // 7 good
+#IMAGESET,0,16,0,0,1,1,1,1,,,,,,,,,,,,,, // 16はdummyとして
 
-//943 アニメーションINSTANT
-#ELSEIF,974,983,943,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-judge-linked.csv,,,,,
 
-//通常
-//940 アニメーションNORMAL、945 長さFULL
-#ELSEIF,974,940,945,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-full.csv,,,,,
+#SRC_IMAGESET,0,101,501,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,165,358,38,-358,0,255,255,255,255,0,0,0,0,0,101,0,0,0,3,
+#SRC_IMAGESET,0,102,502,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,203,358,30,-358,0,255,255,255,255,0,0,0,0,0,102,0,0,0,3,
+#SRC_IMAGESET,0,103,503,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,233,358,38,-358,0,255,255,255,255,0,0,0,0,0,103,0,0,0,3,
+#SRC_IMAGESET,0,104,504,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,271,358,30,-358,0,255,255,255,255,0,0,0,0,0,104,0,0,0,3,
+#SRC_IMAGESET,0,105,505,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,301,358,38,-358,0,255,255,255,255,0,0,0,0,0,105,0,0,0,3,
+#SRC_IMAGESET,0,106,506,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,339,358,30,-358,0,255,255,255,255,0,0,0,0,0,106,0,0,0,3,
+#SRC_IMAGESET,0,107,507,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,369,358,38,-358,0,255,255,255,255,0,0,0,0,0,107,0,0,0,3,
+#SRC_IMAGESET,0,108,508,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,407,358,30,-358,0,255,255,255,255,0,0,0,0,0,108,0,0,0,3,
+#SRC_IMAGESET,0,109,509,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,437,358,38,-358,0,255,255,255,255,0,0,0,0,0,109,0,0,0,3,
 
-//940 アニメーションNORMAL、946 長さHALF
-#ELSEIF,974,940,946,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-half.csv,,,,,
+#SRC_IMAGESET,0,121,501,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,165,358,38,-358,0,255,255,255,255,0,1,0,0,-1,121,0,0,0,3,
+#DST_IMAGE,0,100,184,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,122,502,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,203,358,30,-358,0,255,255,255,255,0,1,0,0,-1,122,0,0,0,3,
+#DST_IMAGE,0,50,218,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,123,503,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,233,358,38,-358,0,255,255,255,255,0,1,0,0,-1,123,0,0,0,3,
+#DST_IMAGE,0,100,252,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,124,504,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,271,358,30,-358,0,255,255,255,255,0,1,0,0,-1,124,0,0,0,3,
+#DST_IMAGE,0,100,286,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,125,505,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,301,358,38,-358,0,255,255,255,255,0,1,0,0,-1,125,0,0,0,3,
+#DST_IMAGE,0,100,320,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,126,506,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,339,358,30,-358,0,255,255,255,255,0,1,0,0,-1,126,0,0,0,3,
+#DST_IMAGE,0,100,354,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,127,507,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,369,358,38,-358,0,255,255,255,255,0,1,0,0,-1,127,0,0,0,3,
+#DST_IMAGE,0,100,388,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,128,508,9,4,5,6,6,7,7,4,4,8,,,,,,,,,
+#DST_IMAGE,0,0,407,358,30,-358,0,255,255,255,255,0,1,0,0,-1,128,0,0,0,3,
+#DST_IMAGE,0,100,422,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
+#SRC_IMAGESET,0,129,509,9,0,1,2,2,3,3,0,0,8,,,,,,,,,
+#DST_IMAGE,0,0,437,358,38,-358,0,255,255,255,255,0,1,0,0,-1,129,0,0,0,3,
+#DST_IMAGE,0,100,456,358,0,-358,0,255,255,255,255,0,1,0,0,,,,,,,
 
-//940 アニメーションNORMAL、947 長さQUARTER
-#ELSEIF,974,940,947,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\normal-quarter.csv,,,,,
 
-//941 アニメーションFAST、945 長さFULL
-#ELSEIF,974,941,945,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-full.csv,,,,,
-
-//941 アニメーションFAST、946 長さHALF
-#ELSEIF,974,941,946,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-half.csv,,,,,
-
-//941 アニメーションFAST、947 長さQUARTER
-#ELSEIF,974,941,947,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\fast-quarter.csv,,,,,
-
-//942 アニメーションVERYFAST、945 長さFULL
-#ELSEIF,974,942,945,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-full.csv,,,,,
-
-//942 アニメーションVERYFAST、946 長さHALF
-#ELSEIF,974,942,946,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-half.csv,,,,,
-
-//942 アニメーションVERYFAST、947 長さQUARTER
-#ELSEIF,974,942,947,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\veryfast-quarter.csv,,,,,
-
-//943 アニメーションINSTANT、945 長さFULL
-#ELSEIF,974,943,945,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-full.csv,,,,,
-
-//943 アニメーションINSTANT、946 長さHALF
-#ELSEIF,974,943,946,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-half.csv,,,,,
-
-//943 アニメーションINSTANT、947 長さQUARTER
-#ELSEIF,974,943,947,
-#INCLUDE,LR2files\Theme\OA_LP_EXB\standard\laser_csv\instant-quarter.csv,,,,,
-
-#ENDIF,
 
 //LN用レーザーカバー
 #IF,916,
