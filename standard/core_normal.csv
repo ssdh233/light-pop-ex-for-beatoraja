@@ -66,7 +66,7 @@
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,0,0,640,480,0,255,255,255,255,0,1,0,0,0,0,0,0,0
+#DST_BGA,0,0,0,0,640,480,0,255,255,255,255,0,1,0,0,0,0,81,0,0
 
 #ENDIF,
 
@@ -251,30 +251,30 @@
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,16,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,16,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,16,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,16,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,496,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,496,106,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,496,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,0,0
+#DST_BGA,0,0,496,234,128,128,0,255,255,255,255,0,1,0,0,0,0,30,81,0
 
 //でかい,,,,,,,,,,,,,,,,,,,,
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,16,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,0,0
+#DST_BGA,0,0,16,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,81,0
 
 //SRC定義,(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),nobase,nolayer,nopoor,,,,,,,
 #SRC_BGA,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_BGA,0,0,496,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,0,0
+#DST_BGA,0,0,496,106,128,256,0,255,255,255,255,0,1,0,0,0,0,31,81,0
 
 #ENDIF,
 
