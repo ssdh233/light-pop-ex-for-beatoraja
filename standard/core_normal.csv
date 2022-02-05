@@ -294,7 +294,7 @@
 
 //beatorajaópägí£
 
-#IMAGE,.\LR2files\Theme\OA_LP_EXB\standard\laser\FULL.png,,,,,,,,,,,,,,,,,,,,, // gr 40
+#IMAGE,.\LR2files\Theme\OA_LP_EXB\standard\laser\*.png,,,,,,,,,,,,,,,,,,,,, // gr 40
 
 #IMAGESET,0,40,204,0,38,358,1,1,,,,,,,,,,,,,, // 0 bad
 #IMAGESET,0,40,0,0,38,358,1,1,,,,,,,,,,,,,, // 1 cool
