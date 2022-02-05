@@ -73,7 +73,7 @@
 #CUSTOMFILE,LANE,.\LR2files\Theme\OA_LP_EXB\standard\lane\*.png,LPEX Default,
 
 #CUSTOMFILE,BOMB,.\LR2files\Theme\OA_LP_EXB\common_parts\bomb\*.png,Light Pop,
-#CUSTOMFILE,LASER,.\LR2files\Theme\OA_LP_EXB\standard\laser\*.png,LPEX Default,
+#CUSTOMFILE,LASER,.\LR2files\Theme\OA_LP_EXB\standard\laser\*.png,FULL,
 #CUSTOMFILE,LANE COVER,.\LR2files\Theme\OA_LP_EXB\standard\lanecover\*.png,LPEX Default,
 
 #CUSTOMFILE,JUDGE,.\LR2files\Theme\OA_LP_EXB\standard\judge\*,LPEX Default,
