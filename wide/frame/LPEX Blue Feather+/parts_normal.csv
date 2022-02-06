@@ -8,7 +8,7 @@
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
 #DST_IMAGE,0,3000,199,0,242,40,0,255,255,255,255,1,0,0,0,3000,0,0,0,
 
-//ゲージ種別表示
+//ゲージ種別表示 とりあえずイージーだけ
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,type,click,panel,,,,,,,
 #SRC_BUTTON,0,0,397,1,128,246,1,6,0,0,40,0,0,0,,,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
