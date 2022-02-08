@@ -28,13 +28,6 @@
 //ゲージやジャッジ隠しがop42-43を使用せざるをえないのでバグ発生時を考慮して敢えてこちらもop42-43で実装
 //IF分岐ではなくdst_opで分岐させれば問題無さげ
 
-//赤ゲージ
-
-//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
-#SRC_IMAGE,0,28,0,76,346,76,1,1,0,0,0,0,0,,,,,,,
-//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
-#DST_IMAGE,0,2000,147,404,346,76,0,0,255,255,255,1,0,0,0,3000,0,43,0,0
-#DST_IMAGE,0,3000,147,404,346,76,0,255,255,255,255,1,0,0,0,,,,,
 
 //通常
 
@@ -51,6 +44,13 @@
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
 #DST_IMAGE,0,2000,147,404,346,76,0,0,255,255,255,1,0,0,0,3000,0,1240,0,0,47,
 #DST_IMAGE,0,3000,147,404,346,76,0,255,255,255,255,1,0,0,0,0,0,1240,0,0,47,
+
+//ハード用赤ゲージ
+//SRC定義,(NULL),gr,x,y,w,h,div_x,div_y,cycle,timer,op1,op2,op3,,,,,,,
+#SRC_IMAGE,0,28,0,76,346,76,1,1,0,0,0,0,0,,,,,,,
+//DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
+#DST_IMAGE,0,2000,147,404,346,76,0,0,255,255,255,1,0,0,0,3000,0,43,0,0
+#DST_IMAGE,0,3000,147,404,346,76,0,255,255,255,255,1,0,0,0,,,,,
 
 //通常
 
