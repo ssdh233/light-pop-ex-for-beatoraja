@@ -2,7 +2,7 @@
 
 # Light Pop EX-B v0.2.0
 
-[Light Pop EX](https://mistyblue.info/lpex.html)の**beatoraja用**改造スキンです。現時点はwide(16:9)のみ対応しております。
+[Light Pop EX](https://mistyblue.info/lpex.html)の**beatoraja用**改造スキンです。wide(16:9)とstandard(4:3)両方対応していますが、現時点ではstandard(4:3)のほうが若干画質がいいので、beatorajaを1280x960にしてstandardを使うことをおすすめします。
 
 Light Pop EXからの変更点：
 * [x] ゲージ表示修正
@@ -30,7 +30,7 @@ https://github.com/ssdh233/light-pop-ex-for-beatoraja/releases
 
 # Light Pop EX-B
 
-[Light Pop EX](https://mistyblue.info/lpex.html)'s beatoraja version. Currently only wide(16:9) ver is available.
+[Light Pop EX](https://mistyblue.info/lpex.html)'s beatoraja version. Both wide(16:9) and standard(4:3) are available, and the standard(4:3) ver has relatively better resolution, so I would recommend to set beatoraja running on 1280x960 to use the standard ver.
 
 Changes from Light Pop EX:
 * [x] gauge display fix
