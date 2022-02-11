@@ -60,9 +60,9 @@ Things I plan to change from now:
 | | Wide(Light Pop EX) | Wide(Blue Feather) | Standard(Light Pop EX) | Standard(Blue Feather) |
 |--|--|--|--|--|
 |Changes till now|O|O|O|O|
-|FHD| ongoing | ongoing | X | X |
-|EX HARD gauge| ongoing | ? | X | X |
-|BIG BGA| ongoing | ongoing | X | X |
+|FHD| coming soon | coming soon | X | X |
+|EX HARD gauge| coming soon | ? | X | X |
+|BIG BGA| coming soon | coming soon | X | X |
 
 
 If you have any requests, or if you want to contribute on this project, feel free to submit an issue at any time.
