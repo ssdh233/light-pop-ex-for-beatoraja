@@ -19,6 +19,12 @@ Light Pop EXからの変更点：
 * [ ] BIG BGA
 * [ ] バグ修正
 
+| | Wide(Light Pop EX) | Wide(Blue Feather) | Standard(Light Pop EX) | Standard(Blue Feather) |
+|--|--|--|--|--|
+|FHD化| 対応予定 | 対応予定 | X | X |
+|EXハードゲージ対応| 対応予定 | ? | X | X |
+|BIG BGA| 対応予定 | 対応予定 | X | X |
+
 もし他にご要望がある方、あるいは協力したい方がいらっしゃたら、気軽にIssueとかで連絡してください。
 
 ## ダウンロード＆使い方
