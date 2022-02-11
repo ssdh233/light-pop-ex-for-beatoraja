@@ -21,6 +21,7 @@ Light Pop EXからの変更点：
 
 | | Wide(Light Pop EX) | Wide(Blue Feather) | Standard(Light Pop EX) | Standard(Blue Feather) |
 |--|--|--|--|--|
+|今までの修正|O|O|O|O|
 |FHD化| 対応予定 | 対応予定 | X | X |
 |EXハードゲージ対応| 対応予定 | ? | X | X |
 |BIG BGA| 対応予定 | 対応予定 | X | X |
@@ -55,6 +56,14 @@ Things I plan to change from now:
 * [ ] EX HARD gauge
 * [ ] BIG BGA
 * [ ] bug fixes
+
+| | Wide(Light Pop EX) | Wide(Blue Feather) | Standard(Light Pop EX) | Standard(Blue Feather) |
+|--|--|--|--|--|
+|Changes till now|O|O|O|O|
+|FHD| ongoing | ongoing | X | X |
+|EX HARD gauge| ongoing | ? | X | X |
+|BIG BGA| ongoing | ongoing | X | X |
+
 
 If you have any requests, or if you want to contribute on this project, feel free to submit an issue at any time.
 
