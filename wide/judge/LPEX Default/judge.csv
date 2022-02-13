@@ -8,7 +8,7 @@
 #IF,35,
 
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
-#SRC_NUMBER,0,10,76,20,84,24,12,2,0,0,108,0,4,,,,,,,
+#SRC_NUMBER,0,10,152,40,168,48,12,2,0,0,108,0,4,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3,
 #DST_NUMBER,0,0,302,280,7,12,0,255,255,255,255,1,0,0,0,-1,46,-913,32,0,
 #DST_NUMBER,0,500,302,280,7,12,0,0,255,255,255,1,0,0,0,,,,,,
@@ -17,7 +17,7 @@
 #ELSEIF,36,
 
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
-#SRC_NUMBER,0,10,76,20,84,24,12,2,0,0,108,0,4,,,,,,,
+#SRC_NUMBER,0,10,152,40,168,48,12,2,0,0,108,0,4,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
 #DST_NUMBER,0,0,302,331,7,12,0,255,255,255,255,1,0,0,0,-1,46,-913,32,0,
 #DST_NUMBER,0,500,302,331,7,12,0,0,255,255,255,1,0,0,0,,,,,,
@@ -26,7 +26,7 @@
 #ELSEIF,37,
 
 //SRC定義,(null),gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,,,,
-#SRC_NUMBER,0,10,76,20,84,24,12,2,0,0,108,0,4,,,,,,,
+#SRC_NUMBER,0,10,152,40,168,48,12,2,0,0,108,0,4,,,,,,,
 //DST定義,(NULL),time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer,op1,op2,op3
 #DST_NUMBER,0,1500,302,381,7,12,0,255,255,255,255,1,0,0,0,1500,40,-913,32,0,
 
@@ -39,21 +39,21 @@
 
 //空Poor index = 0,,,,,,,,,,,,,,,,,
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_1P,0,10,1,96,74,19,1,1,0,46,1,0,0,,,,
+#SRC_NOWJUDGE_1P,0,10,2,192,148,38,1,1,0,46,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_1P,0,0,206,293,74,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWJUDGE_1P,0,500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 #DST_NOWJUDGE_1P,0,1500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_2P,0,10,1,96,74,19,1,1,0,47,1,0,0,,,,
+#SRC_NOWJUDGE_2P,0,10,2,192,148,38,1,1,0,47,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_2P,0,0,283,293,74,19,0,255,255,255,255,1,0,0,0,-1,47
 #DST_NOWJUDGE_2P,0,500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 #DST_NOWJUDGE_2P,0,1500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_3P,0,10,1,96,74,19,1,1,0,247,1,0,0,,,,
+#SRC_NOWJUDGE_3P,0,10,2,192,148,38,1,1,0,247,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_3P,0,0,360,293,74,19,0,255,255,255,255,1,0,0,0,-1,247
 #DST_NOWJUDGE_3P,0,500,360,293,74,19,0,0,255,255,255,1,0,0,0,,
@@ -61,19 +61,19 @@
 
 //見逃しPoor index = 1,,,,,,,,,,,,,,,,,
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_1P,1,10,1,96,74,19,1,1,0,46,1,0,0,,,,
+#SRC_NOWJUDGE_1P,1,10,2,192,148,38,1,1,0,46,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_1P,1,0,206,293,74,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWJUDGE_1P,1,500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_2P,1,10,1,96,74,19,1,1,0,47,1,0,0,,,,
+#SRC_NOWJUDGE_2P,1,10,2,192,148,38,1,1,0,47,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_2P,1,0,283,293,74,19,0,255,255,255,255,1,0,0,0,-1,47
 #DST_NOWJUDGE_2P,1,500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_3P,1,10,1,96,74,19,1,1,0,247,1,0,0,,,,
+#SRC_NOWJUDGE_3P,1,10,2,192,148,38,1,1,0,247,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_3P,1,0,360,293,74,19,0,255,255,255,255,1,0,0,0,-1,247
 #DST_NOWJUDGE_3P,1,500,360,293,74,19,0,0,255,255,255,1,0,0,0,,
@@ -81,17 +81,17 @@
 
 //Bad index = 2,,,,,,,,,,,,,,,,,
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_1P,2,10,1,77,74,19,1,1,0,46,1,0,0,,,,
+#SRC_NOWJUDGE_1P,2,10,2,154,148,38,1,1,0,46,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_1P,2,0,206,293,74,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWJUDGE_1P,2,500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_2P,2,10,1,77,74,19,1,1,0,47,1,0,0,,,,
+#SRC_NOWJUDGE_2P,2,10,2,154,148,38,1,1,0,47,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_2P,2,0,283,293,74,19,0,255,255,255,255,1,0,0,0,-1,47
 #DST_NOWJUDGE_2P,2,500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_3P,2,10,1,77,74,19,1,1,0,247,1,0,0,,,,
+#SRC_NOWJUDGE_3P,2,10,2,154,148,38,1,1,0,247,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_3P,2,0,360,293,74,19,0,255,255,255,255,1,0,0,0,-1,247
 #DST_NOWJUDGE_3P,2,500,360,293,74,19,0,0,255,255,255,1,0,0,0,,
@@ -99,53 +99,53 @@
 #IF,976,
 
 //Good index = 3,,,,,,,,,,,,,,,,,
-#SRC_NOWJUDGE_1P,3,10,1,58,74,19,1,1,0,46,1,0,0,,,,
+#SRC_NOWJUDGE_1P,3,10,2,116,148,38,1,1,0,46,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_1P,3,0,206,293,74,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWJUDGE_1P,3,500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_2P,3,10,1,58,74,19,1,1,0,47,1,0,0,,,,
+#SRC_NOWJUDGE_2P,3,10,2,116,148,38,1,1,0,47,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_2P,3,0,283,293,74,19,0,255,255,255,255,1,0,0,0,-1,47
 #DST_NOWJUDGE_2P,3,500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_3P,3,10,1,58,74,19,1,1,0,247,1,0,0,,,,
+#SRC_NOWJUDGE_3P,3,10,2,116,148,38,1,1,0,247,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_3P,3,0,360,293,74,19,0,255,255,255,255,1,0,0,0,-1,247
 #DST_NOWJUDGE_3P,3,500,360,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //Great index = 4,,,,,,,,,,,,,,,,,
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_1P,4,10,1,39,74,19,1,1,0,46,1,0,0,,,,
+#SRC_NOWJUDGE_1P,4,10,2,78,148,38,1,1,0,46,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_1P,4,0,206,293,74,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWJUDGE_1P,4,500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_2P,4,10,1,39,74,19,1,1,0,47,1,0,0,,,,
+#SRC_NOWJUDGE_2P,4,10,2,78,148,38,1,1,0,47,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_2P,4,0,283,293,74,19,0,255,255,255,255,1,0,0,0,-1,47
 #DST_NOWJUDGE_2P,4,500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_3P,4,10,1,39,74,19,1,1,0,247,1,0,0,,,,
+#SRC_NOWJUDGE_3P,4,10,2,78,148,38,1,1,0,247,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_3P,4,0,360,293,74,19,0,255,255,255,255,1,0,0,0,-1,247
 #DST_NOWJUDGE_3P,4,500,360,293,74,19,0,0,255,255,255,1,0,0,0,,
 
 //通常COOL
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_1P,5,10,1,20,74,19,1,1,0,46,1,0,0,,,,
+#SRC_NOWJUDGE_1P,5,10,2,40,148,38,1,1,0,46,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_1P,5,0,206,293,74,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWJUDGE_1P,5,500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_2P,5,10,1,20,74,19,1,1,0,47,1,0,0,,,,
+#SRC_NOWJUDGE_2P,5,10,2,40,148,38,1,1,0,47,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_2P,5,0,283,293,74,19,0,255,255,255,255,1,0,0,0,-1,47
 #DST_NOWJUDGE_2P,5,500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_3P,5,10,1,20,74,19,1,1,0,247,1,0,0,,,,
+#SRC_NOWJUDGE_3P,5,10,2,40,148,38,1,1,0,247,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_3P,5,0,360,293,74,19,0,255,255,255,255,1,0,0,0,-1,247
 #DST_NOWJUDGE_3P,5,500,360,293,74,19,0,0,255,255,255,1,0,0,0,,
@@ -153,17 +153,17 @@
 
 //虹色COOL
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,noshift,op2,op3,,,,
-#SRC_NOWJUDGE_1P,6,10,1,1,74,19,1,1,0,46,1,0,0,,,,
+#SRC_NOWJUDGE_1P,6,10,2,2,148,38,1,1,0,46,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_1P,6,0,206,293,74,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWJUDGE_1P,6,500,206,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_2P,6,10,1,1,74,19,1,1,0,47,1,0,0,,,,
+#SRC_NOWJUDGE_2P,6,10,2,2,148,38,1,1,0,47,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_2P,6,0,283,293,74,19,0,255,255,255,255,1,0,0,0,-1,47
 #DST_NOWJUDGE_2P,6,500,283,293,74,19,0,0,255,255,255,1,0,0,0,,
 
-#SRC_NOWJUDGE_3P,6,10,1,1,74,19,1,1,0,247,1,0,0,,,,
+#SRC_NOWJUDGE_3P,6,10,2,2,148,38,1,1,0,247,1,0,0,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWJUDGE_3P,6,0,360,293,74,19,0,255,255,255,255,1,0,0,0,-1,247
 #DST_NOWJUDGE_3P,6,500,360,293,74,19,0,0,255,255,255,1,0,0,0,,
@@ -183,59 +183,59 @@
 
 //Good index = 3,,,,,,,,,,,,,,,,,
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_1P,3,10,76,45,120,19,10,1,0,446,0,1,7,,,,
+#SRC_NOWCOMBO_1P,3,10,152,90,240,38,10,1,0,446,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_1P,3,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,446
 #DST_NOWCOMBO_1P,3,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_2P,3,10,76,45,120,19,10,1,0,447,0,1,7,,,,
+#SRC_NOWCOMBO_2P,3,10,152,90,240,38,10,1,0,447,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_2P,3,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,447
 #DST_NOWCOMBO_2P,3,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_3P,3,10,76,45,120,19,10,1,0,448,0,1,7,,,,
+#SRC_NOWCOMBO_3P,3,10,152,90,240,38,10,1,0,448,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_3P,3,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,448
 #DST_NOWCOMBO_3P,3,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 //Great index = 4,,,,,,,,,,,,,,,,,
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_1P,4,10,76,45,120,19,10,1,0,446,0,1,7,,,,
+#SRC_NOWCOMBO_1P,4,10,152,90,240,38,10,1,0,446,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_1P,4,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWCOMBO_1P,4,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_2P,4,10,76,45,120,19,10,1,0,447,0,1,7,,,,
+#SRC_NOWCOMBO_2P,4,10,152,90,240,38,10,1,0,447,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_2P,4,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,447
 #DST_NOWCOMBO_2P,4,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_3P,4,10,76,45,120,19,10,1,0,448,0,1,7,,,,
+#SRC_NOWCOMBO_3P,4,10,152,90,240,38,10,1,0,448,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_3P,4,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,448
 #DST_NOWCOMBO_3P,4,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 //Just Great index = 5,,,,,,,,,,,,,,,,,
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_1P,5,10,76,45,120,19,10,1,0,446,0,1,7,,,,
+#SRC_NOWCOMBO_1P,5,10,152,90,240,38,10,1,0,446,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_1P,5,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,46
 #DST_NOWCOMBO_1P,5,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_2P,5,10,76,45,120,19,10,1,0,447,0,1,7,,,,
+#SRC_NOWCOMBO_2P,5,10,152,90,240,38,10,1,0,447,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_2P,5,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,447
 #DST_NOWCOMBO_2P,5,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
 
 //SRC定義,index,gr,x,y,w,h,div_x,div_y,cycle,timer,num,align,keta,,,,
-#SRC_NOWCOMBO_3P,5,10,76,45,120,19,10,1,0,448,0,1,7,,,,
+#SRC_NOWCOMBO_3P,5,10,152,90,240,38,10,1,0,448,0,1,7,,,,
 //DST定義,index,time,x,y,w,h,acc,a,r,g,b,blend,filter,angle,center,loop,timer
 #DST_NOWCOMBO_3P,5,0,37,20,12,19,0,255,255,255,255,1,0,0,0,-1,448
 #DST_NOWCOMBO_3P,5,500,37,20,12,19,0,0,255,255,255,1,0,0,0,,
