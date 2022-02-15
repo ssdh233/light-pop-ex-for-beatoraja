@@ -1,6 +1,6 @@
 **English follows Japanese.**
 
-# Light Pop EX-B v0.2.0
+# Light Pop EX-B v0.2.1
 
 [Light Pop EX](https://mistyblue.info/lpex.html)の**beatoraja用**改造スキンです。wide(16:9)とstandard(4:3)両方対応していますが、現時点ではbeatorajaはSD(640x480)での表示はアスペクト比固定にしかできないので、beatorajaを640x480にしてstandardを使うことをおすすめします。無理矢理に高解像度にしてwide(16:9)を使うとぼやけます。
 
