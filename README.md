@@ -2,7 +2,7 @@
 
 # Light Pop EX-B v0.2.0
 
-[Light Pop EX](https://mistyblue.info/lpex.html)の**beatoraja用**改造スキンです。wide(16:9)とstandard(4:3)両方対応していますが、現時点ではstandard(4:3)のほうが若干画質がいいので、beatorajaを1280x960にしてstandardを使うことをおすすめします。
+[Light Pop EX](https://mistyblue.info/lpex.html)の**beatoraja用**改造スキンです。wide(16:9)とstandard(4:3)両方対応していますが、現時点ではbeatorajaはSD(640x480)での表示はアスペクト比固定にしかできないので、beatorajaを640x480にしてstandardを使うことをおすすめします。無理矢理に高解像度にしてwide(16:9)を使うとぼやけます。
 
 Light Pop EXからの変更点：
 * [x] ゲージ表示修正
@@ -14,17 +14,9 @@ Light Pop EXからの変更点：
 * [x] タイトル表示の修正（@marie-qune氏に圧倒的な感謝！）
 
 これから変更したいこと：
-* [ ] FHD化
+* [ ] beatorajaでwideが使えるようにする
 * [ ] EXハードゲージ対応
-* [ ] BIG BGA
 * [ ] バグ修正
-
-| | Wide(Light Pop EX) | Wide(Blue Feather) | Standard(Light Pop EX) | Standard(Blue Feather) |
-|--|--|--|--|--|
-|今までの修正|O|O|O|O|
-|FHD化| 対応予定 | 対応予定 | X | X |
-|EXハードゲージ対応| 対応予定 | ? | X | X |
-|BIG BGA| 対応予定 | 対応予定 | X | X |
 
 もし他にご要望がある方、あるいは協力したい方がいらっしゃたら、気軽にIssueとかで連絡してください。
 
@@ -52,18 +44,9 @@ Changes from Light Pop EX:
 * [x] title display fix(thanks to @marie-qune!)
 
 Things I plan to change from now:
-* [ ] Make it look better on FHD
+* [ ] make wide ver also available on beatoraja
 * [ ] EX HARD gauge
-* [ ] BIG BGA
 * [ ] bug fixes
-
-| | Wide(Light Pop EX) | Wide(Blue Feather) | Standard(Light Pop EX) | Standard(Blue Feather) |
-|--|--|--|--|--|
-|Changes till now|O|O|O|O|
-|FHD| coming soon | coming soon | X | X |
-|EX HARD gauge| coming soon | ? | X | X |
-|BIG BGA| coming soon | coming soon | X | X |
-
 
 If you have any requests, or if you want to contribute on this project, feel free to submit an issue at any time.
 
