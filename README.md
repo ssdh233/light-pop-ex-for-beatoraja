@@ -32,7 +32,7 @@ https://github.com/ssdh233/light-pop-ex-for-beatoraja/releases
 
 # Light Pop EX-B
 
-[Light Pop EX](https://mistyblue.info/lpex.html)'s beatoraja version. Both wide(16:9) and standard(4:3) are available, and the standard(4:3) ver has relatively better resolution, so I would recommend to set beatoraja running on 1280x960 to use the standard ver.
+[Light Pop EX](https://mistyblue.info/lpex.html)'s beatoraja version. Both wide(16:9) and standard(4:3) are available, it's recommended to use the standard ver with beatoraja running on 640x480. Using the wide ver on high resolution(like HD or FHD) will make it blurry, since the source images are only 480p.
 
 Changes from Light Pop EX:
 * [x] gauge display fix
